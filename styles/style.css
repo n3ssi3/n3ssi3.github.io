@@ -89,6 +89,7 @@ td {
     vertical-align: middle;
 }
 th {
+    width: 60%;
     font-size: 1.5em;
     vertical-align: top;
     letter-spacing: .1em;
