@@ -1476,7 +1476,8 @@ td h4 {
         letter-spacing: .1;
     }
     .full-width table td {
-        width: 100%;
+        width: auto;
+        float: left;
         text-align: left;
     }
     .middle {
