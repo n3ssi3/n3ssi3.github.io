@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Timer Vanessa H&auml;nni</title>
+        <link rel="stylesheet" type="text/css" href="../styles/reset.css" />
+        <link rel="stylesheet" type="text/css" href="./style.css" />
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,100' rel='stylesheet' type='text/css'>
+    </head>
+    <body ng-app="timer-demo" ng-controller="TimerDemoController">
+
+        <div id="background-wrap">
+            <div class="bubble x1"></div>
+            <div class="bubble x2"></div>
+            <div class="bubble x3"></div>
+            <div class="bubble x4"></div>
+            <div class="bubble x5"></div>
+            <div class="bubble x6"></div>
+            <div class="bubble x7"></div>
+            <div class="bubble x8"></div>
+            <div class="bubble x9"></div>
+            <div class="bubble x10"></div>
+        </div>
+
+        <timer end-time="1452724200000">{{days}} days, {{hours}} hours, {{minutes}} minutes, {{seconds}} seconds</timer>
+
+        <script src="../bower_components/angular/angular.min.js"></script>
+        <script src="../bower_components/angular-timer/dist/angular-timer.min.js"></script>
+        <script src="../bower_components/momentjs/min/moment.min.js"></script>
+        <script src="../bower_components/momentjs/min/locales.min.js"></script>
+        <script src="../bower_components/humanize-duration/humanize-duration.js"></script>
+
+        <script src="./timer.js"></script>
+    </body>
+</html>
