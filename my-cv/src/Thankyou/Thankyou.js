@@ -19,17 +19,17 @@ class Thankyou extends Component {
             <div className='section'>
               <div className='container'>
                 <div className='button-container'>
-                  <a className='btn btn-default btn-round btn-lg btn-icon' href='#' rel='tooltip' title='Follow me on Facebook'>
-                    <i className='fa fa-facebook' />
+                  <a className='btn btn-default btn-round btn-lg btn-icon' href='https://www.facebook.com/vanessa.haenni' rel='tooltip' title='Follow me on Facebook'>
+                    <i className='fab fa-facebook' />
                   </a>
-                  <a className='btn btn-default btn-round btn-lg btn-icon' href='#' rel='tooltip' title='Follow me on Twitter'>
-                    <i className='fa fa-twitter' />
+                  <a className='btn btn-default btn-round btn-lg btn-icon' href='https://twitter.com/n3ssi3' rel='tooltip' title='Follow me on Twitter'>
+                    <i className='fab fa-twitter' />
                   </a>
-                  <a className='btn btn-default btn-round btn-lg btn-icon' href='#' rel='tooltip' title='Follow me on Google+'>
-                    <i className='fa fa-google-plus' />
+                  <a className='btn btn-default btn-round btn-lg btn-icon' href='https://plus.google.com/u/1/+vanessahänni' rel='tooltip' title='Follow me on Google+'>
+                    <i className='fab fa-google-plus' />
                   </a>
-                  <a className='btn btn-default btn-round btn-lg btn-icon' href='#' rel='tooltip' title='Follow me on Instagram'>
-                    <i className='fa fa-instagram' />
+                  <a className='btn btn-default btn-round btn-lg btn-icon' href='https://www.instagram.com/n3ssi3.m3/' rel='tooltip' title='Follow me on Instagram'>
+                    <i className='fab fa-instagram' />
                   </a>
                 </div>
               </div>
