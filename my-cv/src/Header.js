@@ -37,7 +37,6 @@ class Header extends Component {
           <nav className={'navbar navbar-expand-lg fixed-top bg-primary' + this.state.cssClass} color-on-scroll='400'>
             <div className='container'>
               <div className='navbar-translate'>
-                <a className='navbar-brand' href='#' rel='tooltip'>Creative CV</a>
                 <button className='navbar-toggler navbar-toggler' type='button' data-toggle='collapse' data-target='#navigation' aria-controls='navigation'
                   aria-expanded='false' aria-label='Toggle navigation'>
                   <span className='navbar-toggler-bar bar1' />

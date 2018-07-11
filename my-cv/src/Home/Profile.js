@@ -6,13 +6,11 @@ class Profile extends Component {
       <section className='profile-page'>
         <div className='wrapper'>
           <div className='page-header page-header-small' filter-color='green'>
-            <div className='page-header-image' data-parallax='true'></div>
+            <div className='page-header-image' data-parallax='true' />
             <div className='container'>
               <div className='content-center'>
                 <div className='cc-profile-image'>
-                  <a href='#'>
-                    <img src='images/nessa.jpg' alt='Image' />
-                  </a>
+                  <img src='images/nessa.jpg' alt='Vanessa Aryanata H&auml;nni' />
                 </div>
                 <div className='h2 title'>Vanessa Aryanata</div>
                 <p className='category text-white'>Web Developer, Digital Marketing, Scuba Diving Instructor</p>

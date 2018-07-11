@@ -10,7 +10,7 @@ class Experience extends Component {
             <div className='row'>
               <div className='col-md-3 bg-primary' data-aos='fade-right' data-aos-offset='50' data-aos-duration='500'>
                 <div className='card-body cc-experience-header'>
-                  <p>December 2016 - Present</p>
+                  <p>Dec 2016 - Present</p>
                   <div className='h5'>Bali Hai</div>
                 </div>
               </div>
@@ -30,7 +30,7 @@ class Experience extends Component {
             <div className='row'>
               <div className='col-md-3 bg-primary' data-aos='fade-right' data-aos-offset='50' data-aos-duration='500'>
                 <div className='card-body cc-experience-header'>
-                  <p>December 2015 - January 2017</p>
+                  <p>Dec 2015 - Jan 2017</p>
                   <div className='h5'>Blackriverdata</div>
                 </div>
               </div>
@@ -46,7 +46,7 @@ class Experience extends Component {
             <div className='row'>
               <div className='col-md-3 bg-primary' data-aos='fade-right' data-aos-offset='50' data-aos-duration='500'>
                 <div className='card-body cc-experience-header'>
-                  <p>February 2015 - November 2015</p>
+                  <p>Feb 2015 - Nov 2015</p>
                   <div className='h5'>Tauch Terminal Tulamben</div>
                 </div>
               </div>
@@ -62,7 +62,7 @@ class Experience extends Component {
             <div className='row'>
               <div className='col-md-3 bg-primary' data-aos='fade-right' data-aos-offset='50' data-aos-duration='500'>
                 <div className='card-body cc-experience-header'>
-                  <p>October 2013 - January 2015</p>
+                  <p>Oct 2013 - Jan 2015</p>
                   <div className='h5'>Divio AG</div>
                 </div>
               </div>
@@ -81,7 +81,7 @@ class Experience extends Component {
             <div className='row'>
               <div className='col-md-3 bg-primary' data-aos='fade-right' data-aos-offset='50' data-aos-duration='500'>
                 <div className='card-body cc-experience-header'>
-                  <p>August 2009 - June 2013</p>
+                  <p>Aug 2009 - Jun 2013</p>
                   <div className='h5'>Liip AG</div>
                 </div>
               </div>
@@ -101,7 +101,7 @@ class Experience extends Component {
             <div className='row'>
               <div className='col-md-3 bg-primary' data-aos='fade-right' data-aos-offset='50' data-aos-duration='500'>
                 <div className='card-body cc-experience-header'>
-                  <p>August 2008 - May 2009</p>
+                  <p>Aug 2008 - May 2009</p>
                   <div className='h5'>Zattoo Inc</div>
                 </div>
               </div>
