@@ -1,0 +1,23 @@
+{
+  "name": "my-cv",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "aos": "^2.3.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.4"
+  },
+  "scripts": {
+    "sass:watch": "./node_modules/node-sass/bin/node-sass -w src/styles/scss -o src/styles/css",
+    "sass:build": "./node_modules/node-sass/bin/node-sass src/styles/scss -o src/styles/css --source-map true",
+    "start": "yarn run sass:build && react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "node-sass": "^4.7.2"
+  }
+}
