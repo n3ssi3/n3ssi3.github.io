@@ -8,4 +8,9 @@
   line-height: 1.5626rem;
   width: 25px; }
 
+.cc-contact-information .container.cc-contact {
+  padding: 0; }
+  .cc-contact-information .container.cc-contact .col-md-9 {
+    margin: 0 auto; }
+
 /*# sourceMappingURL=App.css.map */

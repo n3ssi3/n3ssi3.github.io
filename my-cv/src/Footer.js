@@ -5,7 +5,7 @@ class Footer extends Component {
     return (
       <footer className='footer'>
         <div className='container text-center'>
-          <a className='cc-facebook btn btn-link' href='https://www.facebook.com/vanessa.haenni'>
+          <a className='cc-facebook btn btn-link' href='https://www.facebook.com/vanessa.aryanata'>
             <i className='fab fa-facebook fa-2x ' aria-hidden='true' />
           </a>
           <a className='cc-twitter btn btn-link ' href='https://twitter.com/n3ssi3'>

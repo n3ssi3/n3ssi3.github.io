@@ -4,8 +4,8 @@ class About extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      email: '<button>Show Email</button>',
-      phone: '<button>Show Phone Number</button>'
+      email: '<button class="btn btn-info">Show Email</button>',
+      phone: '<button class="btn btn-info">Show Phone Number</button>'
     }
   }
 

@@ -19,7 +19,7 @@ class Thankyou extends Component {
             <div className='section'>
               <div className='container'>
                 <div className='button-container'>
-                  <a className='btn btn-default btn-round btn-lg btn-icon' href='https://www.facebook.com/vanessa.haenni' rel='tooltip' title='Follow me on Facebook'>
+                  <a className='btn btn-default btn-round btn-lg btn-icon' href='https://www.facebook.com/vanessa.aryanata' rel='tooltip' title='Follow me on Facebook'>
                     <i className='fab fa-facebook' />
                   </a>
                   <a className='btn btn-default btn-round btn-lg btn-icon' href='https://twitter.com/n3ssi3' rel='tooltip' title='Follow me on Twitter'>
