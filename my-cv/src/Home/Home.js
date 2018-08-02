@@ -4,9 +4,9 @@ import About from './About'
 import Contact from './Contact'
 import Education from './Education'
 import Experience from './Experience'
-import Portfolio from './Portfolio'
+// import Portfolio from './Portfolio'
 import Profile from './Profile'
-import Reference from './Reference'
+// import Reference from './Reference'
 import Skill from './Skill'
 
 class App extends Component {
@@ -16,10 +16,10 @@ class App extends Component {
         <Profile />
         <About />
         <Skill />
-        <Portfolio />
+        {/* <Portfolio /> */}
         <Experience />
         <Education />
-        <Reference />
+        {/* <Reference /> */}
         <Contact />
       </div>
     )
