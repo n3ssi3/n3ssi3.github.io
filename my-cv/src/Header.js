@@ -52,9 +52,9 @@ class Header extends Component {
                   <li className='nav-item'>
                     <a className='nav-link smooth-scroll' href='#skill'>Skills</a>
                   </li>
-                  <li className='nav-item'>
+                  {/* <li className='nav-item'>
                     <a className='nav-link smooth-scroll' href='#portfolio'>Portfolio</a>
-                  </li>
+                  </li> */}
                   <li className='nav-item'>
                     <a className='nav-link smooth-scroll' href='#experience'>Experience</a>
                   </li>
