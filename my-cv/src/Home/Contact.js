@@ -76,12 +76,12 @@ class Contact extends Component {
                         <p className='mb-0'>
                           <strong>Address </strong>
                         </p>
-                        <p className='pb-2'>Tulamben, Kubu, Bali, Indonesia</p>
+                        <p className='pb-2'>Zurich, Switzerland</p>
                         <p className='mb-0'>
                           <strong>Phone</strong>
                         </p>
                         <p className='pb-2' onClick={() => { this.setState({
-                          phone: '<a href="tel:+628113864152">+62 811 386 4152</a>' }) }}>
+                          phone: '<a href="tel:+41788726843">+41 78 872 6243</a>' }) }}>
                           <span dangerouslySetInnerHTML={{ __html: this.state.phone }} />
                         </p>
                         <p className='mb-0'>

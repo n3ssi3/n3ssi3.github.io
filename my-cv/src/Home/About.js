@@ -30,7 +30,7 @@ class About extends Component {
                     <div className='col-sm-4'>
                       <strong className='text-uppercase'>Age:</strong>
                     </div>
-                    <div className='col-sm-8'>29</div>
+                    <div className='col-sm-8'>30</div>
                   </div>
                   <div className='row mt-3'>
                     <div className='col-sm-4'>
@@ -46,7 +46,7 @@ class About extends Component {
                     </div>
                     <div className='col-sm-8' onClick={() => {
                       this.setState({
-                        phone: '<a href="tel:+628113864152">+62 811 386 4152</a>'
+                        phone: '<a href="tel:+41788726843">+41 78 872 6243</a>'
                       })
                     }}>
                       <span dangerouslySetInnerHTML={{ __html: this.state.phone }} />
@@ -56,7 +56,7 @@ class About extends Component {
                     <div className='col-sm-4'>
                       <strong className='text-uppercase'>Address:</strong>
                     </div>
-                    <div className='col-sm-8'><p>Tulamben, Kubu, Bali, Indonesia<br /><i>Willing to relocate</i></p></div>
+                    <div className='col-sm-8'><p>Zurich, Switzerland</p></div>
                   </div>
                   <div className='row mt-3'>
                     <div className='col-sm-4'>
