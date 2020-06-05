@@ -14,6 +14,7 @@ class Thankyou extends Component {
             <div className='container'>
               <div className='content-center'>
                 <div className='h2 title'>Thank you!</div>
+                <p>I will get back to you as soon as I can.</p>
               </div>
             </div>
             <div className='section'>

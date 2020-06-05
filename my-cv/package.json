@@ -3,21 +3,34 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "aos": "^2.3.2",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
-    "react-router-dom": "^4.3.1",
-    "react-scripts": "1.1.4"
+    "aos": "^2.3.4",
+    "bootstrap": "^4.5.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1"
   },
   "scripts": {
-    "sass:watch": "./node_modules/node-sass/bin/node-sass -w src/styles/scss -o src/styles/css",
-    "sass:build": "./node_modules/node-sass/bin/node-sass src/styles/scss -o src/styles/css --source-map true",
+    "sass:watch": "./node_modules/node-sass/bin/node-sass -w src/styles/scss -o src/styles/css --source-map true",
+    "sass:build": "./node_modules/node-sass/bin/node-sass src/styles/scss -o src/styles/css --output-style compressed",
     "start": "yarn run sass:build && react-scripts start",
-    "build": "react-scripts build",
+    "build": "yarn run sass:build && react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "node-sass": "^4.11.0"
+    "node-sass": "^4.14.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

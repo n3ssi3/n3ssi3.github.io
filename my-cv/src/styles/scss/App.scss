@@ -1,3 +1,18 @@
+@import '~aos/dist/aos.css';
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+@import './Design.scss';
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.collapse.show.navbar-collapse {
+  transform: none;
+}
+
 .btn.btn-icon:not(.btn-footer) i.fab,
 .navbar .navbar-nav > a.btn.btn-icon:not(.btn-footer) i.fab {
   position: absolute;
@@ -14,4 +29,18 @@
   .col-md-9 {
     margin: 0 auto;
   }
+}
+
+.form-group .input-group-addon + .form-control,
+.form-group .input-group-addon ~ .form-control,
+.input-group .input-group-addon + .form-control,
+.input-group .input-group-addon ~ .form-control {
+  margin-left: -15px;
+  background: #fff;
+  padding-left: 5px;
+}
+
+.form-group .input-group-addon,
+.input-group .input-group-addon {
+  padding: 5px 15px 4px 10px;
 }
