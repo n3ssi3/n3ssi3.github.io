@@ -4,7 +4,6 @@
   "private": true,
   "dependencies": {
     "aos": "^2.3.4",
-    "autoprefixer": "^9.8.0",
     "bootstrap": "^4.5.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -13,11 +12,10 @@
     "scss-bundle": "^3.1.2"
   },
   "scripts": {
-    "sass:watch": "scss-bundle -wc scss-bundle.config.json",
+    "sass:watch": "yarn run sass:build && scss-bundle -w -c scss-bundle.config.json",
     "sass:build": "scss-bundle -c scss-bundle.config.json",
-    "autoprefix": "npx postcss --no-map src/styles/css --use autoprefixer --use cssnano -o src/styles/css/style.min.css",
     "start": "yarn run sass:build && react-scripts start",
-    "build": "yarn run sass:build && yarn run autoprefix && react-scripts build",
+    "build": "yarn run sass:build && react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
