@@ -1,3 +1,12 @@
+@import '~aos/dist/aos.css';
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
 .btn.btn-icon:not(.btn-footer) i.fab,
 .navbar .navbar-nav > a.btn.btn-icon:not(.btn-footer) i.fab {
   position: absolute;

@@ -3,21 +3,37 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "aos": "^2.3.2",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
-    "react-router-dom": "^4.3.1",
-    "react-scripts": "1.1.4"
+    "aos": "^2.3.4",
+    "autoprefixer": "^9.8.0",
+    "bootstrap": "^4.5.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "scss-bundle": "^3.1.2"
   },
   "scripts": {
-    "sass:watch": "./node_modules/node-sass/bin/node-sass -w src/styles/scss -o src/styles/css",
-    "sass:build": "./node_modules/node-sass/bin/node-sass src/styles/scss -o src/styles/css --source-map true",
+    "sass:watch": "scss-bundle -wc scss-bundle.config.json",
+    "sass:build": "scss-bundle -c scss-bundle.config.json",
+    "autoprefix": "npx postcss --no-map src/styles/css --use autoprefixer --use cssnano -o src/styles/css/style.min.css",
     "start": "yarn run sass:build && react-scripts start",
-    "build": "react-scripts build",
+    "build": "yarn run sass:build && yarn run autoprefix && react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "node-sass": "^4.11.0"
+    "node-sass": "^4.14.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
