@@ -4,7 +4,8 @@ class Header extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      cssClass: ''
+      cssClass: '',
+      isNavbarOpen: false
     }
   }
   componentDidMount() {
@@ -38,28 +39,28 @@ class Header extends Component {
             <div className='container'>
               <div className='navbar-translate'>
                 <button className='navbar-toggler navbar-toggler' type='button' data-toggle='collapse' data-target='#navigation' aria-controls='navigation'
-                  aria-expanded='false' aria-label='Toggle navigation'>
+                  aria-expanded={this.state.isNavbarOpen ? 'true' : 'false'} aria-label='Toggle navigation' onClick={() => this.setState({ isNavbarOpen: !this.state.isNavbarOpen })}>
                   <span className='navbar-toggler-bar bar1' />
                   <span className='navbar-toggler-bar bar2' />
                   <span className='navbar-toggler-bar bar3' />
                 </button>
               </div>
-              <div className='collapse navbar-collapse justify-content-end' id='navigation'>
+              <div className={`collapse navbar-collapse justify-content-end ${this.state.isNavbarOpen ? 'show' : ''}`} id='navigation'>
                 <ul className='navbar-nav'>
                   <li className='nav-item'>
-                    <a className='nav-link smooth-scroll' href='#about'>About</a>
+                    <a className='nav-link smooth-scroll' href='./#about'>About</a>
                   </li>
                   <li className='nav-item'>
-                    <a className='nav-link smooth-scroll' href='#skill'>Skills</a>
+                    <a className='nav-link smooth-scroll' href='./#skill'>Skills</a>
                   </li>
                   {/* <li className='nav-item'>
                     <a className='nav-link smooth-scroll' href='#portfolio'>Portfolio</a>
                   </li> */}
                   <li className='nav-item'>
-                    <a className='nav-link smooth-scroll' href='#experience'>Experience</a>
+                    <a className='nav-link smooth-scroll' href='./#experience'>Experience</a>
                   </li>
                   <li className='nav-item'>
-                    <a className='nav-link smooth-scroll' href='#contact'>Contact</a>
+                    <a className='nav-link smooth-scroll' href='./#contact'>Contact</a>
                   </li>
                 </ul>
               </div>

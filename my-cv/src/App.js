@@ -6,7 +6,7 @@ import Header from './Header'
 import Home from './Home/Home'
 import Thankyou from './Thankyou/Thankyou'
 
-import './styles/scss/index.scss'
+import './styles/scss/App.scss'
 
 class App extends Component {
   render () {

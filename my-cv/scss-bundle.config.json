@@ -1,7 +1,0 @@
-{
-    "bundlerOptions": {
-        "entryFile": "./src/styles/scss/App.scss",
-        "outFile": "./src/styles/scss/index.scss",
-        "logLevel": "silent"
-    }
-}

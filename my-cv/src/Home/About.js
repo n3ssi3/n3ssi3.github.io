@@ -18,9 +18,9 @@ class About extends Component {
               <div className='col-lg-6 col-md-12'>
                 <div className='card-body'>
                   <div className='h4 mt-0 title'>About</div>
-                  <p>Hello! I am Vanessa Aryanata-H&auml;nni, a pationate Javascript / Web Developer and currently employed as a Digital (Marketing) Manager.</p>
+                  <p>Hello! I am Vanessa Aryanata-H&auml;nni, a pationate Javascript / Web Developer and currently employed as a Senior Frontend Engineer.</p>
                   <p>As an experienced digital marketing manager and online sales manager, my tenacious and proactive approach resulted in numerous important contract wins.<br />
-                    Currently I am seeking a new challenge which will utilise my meticulous attention to detail, and friendly, professional manner.</p>
+                  My real passion, however, lies in making the internet beautiful. I love to create websites and playing around utilizing the latest technologies.</p>
                 </div>
               </div>
               <div className='col-lg-6 col-md-12'>

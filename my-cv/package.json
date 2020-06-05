@@ -8,12 +8,11 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1",
-    "scss-bundle": "^3.1.2"
+    "react-scripts": "3.4.1"
   },
   "scripts": {
-    "sass:watch": "yarn run sass:build && scss-bundle -w -c scss-bundle.config.json",
-    "sass:build": "scss-bundle -c scss-bundle.config.json",
+    "sass:watch": "./node_modules/node-sass/bin/node-sass -w src/styles/scss -o src/styles/css --source-map true",
+    "sass:build": "./node_modules/node-sass/bin/node-sass src/styles/scss -o src/styles/css --output-style compressed",
     "start": "yarn run sass:build && react-scripts start",
     "build": "yarn run sass:build && react-scripts build",
     "test": "react-scripts test --env=jsdom",

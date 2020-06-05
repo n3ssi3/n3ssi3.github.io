@@ -10,7 +10,23 @@ class Experience extends Component {
             <div className='row'>
               <div className='col-md-3 bg-primary' data-aos='fade-right' data-aos-offset='50' data-aos-duration='500'>
                 <div className='card-body cc-experience-header'>
-                  <p>Dec 2016 - Present</p>
+                  <p>April 2019 - present</p>
+                  <div className='h5'>Datatrans</div>
+                </div>
+              </div>
+              <div className='col-md-9' data-aos='fade-left' data-aos-offset='50' data-aos-duration='500'>
+                <div className='card-body'>
+                  <div className='h5'>Senior Software Engineer</div>
+                  <p>Datatrans' modern payment solutions reduce customers' workload while generating higher conversion rates.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='card'>
+            <div className='row'>
+              <div className='col-md-3 bg-primary' data-aos='fade-right' data-aos-offset='50' data-aos-duration='500'>
+                <div className='card-body cc-experience-header'>
+                  <p>Dec 2016 - Nov 2018</p>
                   <div className='h5'>Bali Hai</div>
                 </div>
               </div>

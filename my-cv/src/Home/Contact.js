@@ -40,7 +40,7 @@ class Contact extends Component {
                             <div className='col'>
                               <div className='input-group'>
                                 <span className='input-group-addon'>
-                                  <i className='fa fa-file-text' />
+                                  <i className='fa fa-file-alt' />
                                 </span>
                                 <input className='form-control' type='text' name='Subject' placeholder='Subject' required='required' />
                               </div>
