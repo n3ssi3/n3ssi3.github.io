@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "aos": "^2.3.4",
-    "bootstrap": "^4.5.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1"
+    "aos": "*",
+    "bootstrap": "*",
+    "react": "*",
+    "react-dom": "*",
+    "react-router-dom": "*",
+    "react-scripts": "*"
   },
   "scripts": {
     "sass:watch": "./node_modules/node-sass/bin/node-sass -w src/styles/scss -o src/styles/css --source-map true",
@@ -19,7 +19,8 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "node-sass": "^4.14.1"
+    "@babel/core": "^7.13.16",
+    "node-sass": "*"
   },
   "browserslist": {
     "production": [
