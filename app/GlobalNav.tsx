@@ -4,12 +4,15 @@ import { demos } from '@/lib/demos';
 import clsx from 'clsx';
 import { useSelectedLayoutSegments } from 'next/navigation';
 import Link from 'next/link';
+import { useTheme } from './ThemeContext';
 
 export default function GlobalNav() {
   const [selectedLayoutSegments] = useSelectedLayoutSegments();
+  const [darkMode, setDarkMode] = useTheme()
 
   return (
     <div className="space-y-5">
+      <button className='rounded-lg px-3 py-1 text-sm font-medium bg-zinc-700 text-zinc-100 hover:bg-zinc-500 hover:text-white' onClick={() => setDarkMode(!darkMode)}>{darkMode ? 'Light Mode' : 'Dark Mode'}</button>
       {demos.map((demo) => {
         return (
           <div key={demo.name}>
