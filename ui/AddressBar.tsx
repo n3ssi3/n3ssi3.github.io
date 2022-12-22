@@ -39,7 +39,7 @@ const AddressBar = () => {
                     <span>
                       <span
                         key={segment}
-                        className="animate-[highlight_1s_ease-in-out_1] rounded-full px-1.5 py-0.5 text-zinc-100"
+                        className="animate-[highlight_1s_ease-in-out_1] rounded-full px-1.5 py-0.5 dark:text-zinc-100"
                       >
                         {segment}
                       </span>

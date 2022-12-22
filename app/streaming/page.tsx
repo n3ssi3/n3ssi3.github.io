@@ -7,7 +7,7 @@ import BuyNow from './buy-now';
 export default function Posts() {
   return (
     <section>
-      <div className="text-white">
+      <div className="dark:text-white">
         <div className="space-y-4">
           <div className="flex space-x-6">
             <div className="w-full space-y-4">
