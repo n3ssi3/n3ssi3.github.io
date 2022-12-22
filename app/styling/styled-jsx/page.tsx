@@ -1,12 +1,12 @@
-'use client';
+'use client'
 
 const SkeletonCard = () => (
   <>
-    <div className="skeleton">
-      <div className="skeleton-img" />
-      <div className="skeleton-btn" />
-      <div className="skeleton-line-one" />
-      <div className="skeleton-line-two" />
+    <div className='skeleton'>
+      <div className='skeleton-img' />
+      <div className='skeleton-btn' />
+      <div className='skeleton-line-one' />
+      <div className='skeleton-line-two' />
     </div>
     <style jsx>{`
       .skeleton {
@@ -53,15 +53,13 @@ const SkeletonCard = () => (
       }
     `}</style>
   </>
-);
+)
 
 export default function Page() {
   return (
-    <div className="space-y-4">
-      <div className="text-xl font-medium text-zinc-500">
-        Styled with Styled JSX
-      </div>
-      <div className="container">
+    <div className='space-y-4'>
+      <div className='text-xl font-medium text-zinc-500'>Styled with Styled JSX</div>
+      <div className='container'>
         <SkeletonCard />
         <SkeletonCard />
         <SkeletonCard />
@@ -75,5 +73,5 @@ export default function Page() {
         }
       `}</style>
     </div>
-  );
+  )
 }

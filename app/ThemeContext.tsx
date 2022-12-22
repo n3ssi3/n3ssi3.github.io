@@ -1,24 +1,20 @@
-'use client';
+'use client'
 
-import React from 'react';
+import React from 'react'
 
 const ThemeContext = React.createContext<
   [boolean, React.Dispatch<React.SetStateAction<boolean>>] | undefined
->(undefined);
+>(undefined)
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const [darkMode, setDarkMode] = React.useState(false);
-  return (
-    <ThemeContext.Provider value={[darkMode, setDarkMode]}>
-      {children}
-    </ThemeContext.Provider>
-  );
+  const [darkMode, setDarkMode] = React.useState(false)
+  return <ThemeContext.Provider value={[darkMode, setDarkMode]}>{children}</ThemeContext.Provider>
 }
 
 export function useTheme() {
-  const context = React.useContext(ThemeContext);
+  const context = React.useContext(ThemeContext)
   if (context === undefined) {
-    throw new Error('useTheme must be used within a ThemeProvider');
+    throw new Error('useTheme must be used within a ThemeProvider')
   }
-  return context;
+  return context
 }

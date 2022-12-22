@@ -7,7 +7,7 @@
     "start": "next start",
     "lint": "next lint",
     "tailwind": "tailwindcss -i styles/globals.css -o styles/dist.css",
-    "format": "prettier --write \"**/*.{js,ts,tsx,md}\"",
+    "format": "prettier --write \"**/*.{js,ts,tsx,md}\" --config ./.prettierrc.js --ignore-path ./.gitignore",
     "postinstall": "npm run tailwind"
   },
   "prettier": {
@@ -27,6 +27,7 @@
     "use-count-up": "3.0.1"
   },
   "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "4.0.0",
     "@types/node": "18.0.3",
     "@types/react": "18.0.15",
     "@types/react-dom": "18.0.6",

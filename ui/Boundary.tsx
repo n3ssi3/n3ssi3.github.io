@@ -1,14 +1,14 @@
-import clsx from 'clsx';
-import React from 'react';
+import clsx from 'clsx'
+import React from 'react'
 
 const Label = ({
   children,
   animateRerendering,
-  color,
+  color
 }: {
-  children: React.ReactNode;
-  animateRerendering?: boolean;
-  color?: 'default' | 'pink' | 'blue' | 'violet' | 'cyan' | 'orange';
+  children: React.ReactNode
+  animateRerendering?: boolean
+  color?: 'default' | 'pink' | 'blue' | 'violet' | 'cyan' | 'orange'
 }) => {
   return (
     <div
@@ -19,25 +19,24 @@ const Label = ({
         'bg-vercel-cyan text-cyan-100': color === 'cyan',
         'bg-vercel-violet text-violet-100': color === 'violet',
         'bg-vercel-orange text-orange-100': color === 'orange',
-        'animate-[highlight_1s_ease-in-out_1]': animateRerendering,
-      })}
-    >
+        'animate-[highlight_1s_ease-in-out_1]': animateRerendering
+      })}>
       {children}
     </div>
-  );
-};
+  )
+}
 export const Boundary = ({
   children,
   labels = ['children'],
   size = 'default',
   color = 'default',
-  animateRerendering = true,
+  animateRerendering = true
 }: {
-  children: React.ReactNode;
-  labels?: string[];
-  size?: 'small' | 'default';
-  color?: 'default' | 'pink' | 'blue' | 'violet' | 'cyan' | 'orange';
-  animateRerendering?: boolean;
+  children: React.ReactNode
+  labels?: string[]
+  size?: 'small' | 'default'
+  color?: 'default' | 'pink' | 'blue' | 'violet' | 'cyan' | 'orange'
+  animateRerendering?: boolean
 }) => {
   return (
     <div
@@ -50,33 +49,26 @@ export const Boundary = ({
         'border-vercel-cyan': color === 'cyan',
         'border-vercel-violet': color === 'violet',
         'border-vercel-orange': color === 'orange',
-        'animate-[rerender_1s_ease-in-out_1] text-vercel-pink':
-          animateRerendering,
-      })}
-    >
+        'animate-[rerender_1s_ease-in-out_1] text-vercel-pink': animateRerendering
+      })}>
       <div
         className={clsx(
           'absolute -top-2.5 flex space-x-1 text-[9px] uppercase leading-4 tracking-widest',
           {
             'left-5': size === 'small',
-            'left-9': size === 'default',
-          },
-        )}
-      >
-        {labels.map((label) => {
+            'left-9': size === 'default'
+          }
+        )}>
+        {labels.map(label => {
           return (
-            <Label
-              key={label}
-              color={color}
-              animateRerendering={animateRerendering}
-            >
+            <Label key={label} color={color} animateRerendering={animateRerendering}>
               {label}
             </Label>
-          );
+          )
         })}
       </div>
 
       {children}
     </div>
-  );
-};
+  )
+}

@@ -1,13 +1,13 @@
 export type PageProps = {
-  params?: any;
-  children?: React.ReactNode;
-};
+  params?: any
+  children?: React.ReactNode
+}
 export type Category = {
-  name: string;
-  slug: string;
-  count: number;
-  items: Omit<Category, 'items'>[];
-};
+  name: string
+  slug: string
+  count: number
+  items: Omit<Category, 'items'>[]
+}
 
 export const getCategories = (): Category[] => [
   {
@@ -17,8 +17,8 @@ export const getCategories = (): Category[] => [
     items: [
       { name: 'Phones', slug: 'phones', count: 4 },
       { name: 'Tablets', slug: 'tablets', count: 5 },
-      { name: 'Laptops', slug: 'laptops', count: 2 },
-    ],
+      { name: 'Laptops', slug: 'laptops', count: 2 }
+    ]
   },
   {
     name: 'Clothing',
@@ -27,8 +27,8 @@ export const getCategories = (): Category[] => [
     items: [
       { name: 'Tops', slug: 'tops', count: 3 },
       { name: 'Shorts', slug: 'shorts', count: 4 },
-      { name: 'Shoes', slug: 'shoes', count: 5 },
-    ],
+      { name: 'Shoes', slug: 'shoes', count: 5 }
+    ]
   },
   {
     name: 'Books',
@@ -37,31 +37,31 @@ export const getCategories = (): Category[] => [
     items: [
       { name: 'Fiction', slug: 'fiction', count: 5 },
       { name: 'Biography', slug: 'biography', count: 2 },
-      { name: 'Education', slug: 'education', count: 3 },
-    ],
-  },
-];
+      { name: 'Education', slug: 'education', count: 3 }
+    ]
+  }
+]
 
 export async function fetchCategoryBySlug(slug: string | undefined) {
   // Assuming it always return expected categories
-  return getCategories().find((category) => category.slug === slug);
+  return getCategories().find(category => category.slug === slug)
 }
 
 export async function fetchCategories(): Promise<Category[]> {
-  return getCategories();
+  return getCategories()
 }
 
 async function findSubCategory(
   category: Category | undefined,
-  subCategorySlug: string | undefined,
+  subCategorySlug: string | undefined
 ) {
-  return category?.items.find((category) => category.slug === subCategorySlug);
+  return category?.items.find(category => category.slug === subCategorySlug)
 }
 
 export async function fetchSubCategory(
   categorySlug: string | undefined,
-  subCategorySlug: string | undefined,
+  subCategorySlug: string | undefined
 ) {
-  const category = await fetchCategoryBySlug(categorySlug);
-  return findSubCategory(category, subCategorySlug);
+  const category = await fetchCategoryBySlug(categorySlug)
+  return findSubCategory(category, subCategorySlug)
 }

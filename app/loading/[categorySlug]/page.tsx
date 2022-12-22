@@ -1,36 +1,31 @@
 // @ts-ignore
-import { use } from 'react';
-import {
-  fetchCategoryBySlug,
-  PageProps,
-  type Category,
-} from '@/lib/getCategories';
-import { SkeletonCard } from '@/ui/SkeletonCard';
+import { use } from 'react'
 
-const fetchCategory = async (
-  categorySlug: string | undefined,
-): Promise<Category | undefined> => {
+import { type Category, PageProps, fetchCategoryBySlug } from '@/lib/getCategories'
+import { SkeletonCard } from '@/ui/SkeletonCard'
+
+const fetchCategory = async (categorySlug: string | undefined): Promise<Category | undefined> => {
   // artificial delay
-  await new Promise((resolve) => setTimeout(resolve, 3000));
+  await new Promise(resolve => setTimeout(resolve, 3000))
 
-  if (!categorySlug) return;
+  if (!categorySlug) return
 
-  return await fetchCategoryBySlug(categorySlug);
-};
+  return await fetchCategoryBySlug(categorySlug)
+}
 
 export default function Page({ params }: PageProps) {
-  const category = use(fetchCategory(params.categorySlug));
-  if (!category) return null;
+  const category = use(fetchCategory(params.categorySlug))
+  if (!category) return null
 
   return (
-    <div className="space-y-4">
-      <div className="text-xl font-medium text-zinc-500">{category.name}</div>
+    <div className='space-y-4'>
+      <div className='text-xl font-medium text-zinc-500'>{category.name}</div>
 
-      <div className="grid grid-cols-3 gap-6">
+      <div className='grid grid-cols-3 gap-6'>
         {Array.from({ length: category.count }).map((_, i) => (
           <SkeletonCard key={i} />
         ))}
       </div>
     </div>
-  );
+  )
 }

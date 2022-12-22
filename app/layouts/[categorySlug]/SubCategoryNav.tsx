@@ -1,32 +1,29 @@
-'use client';
+'use client'
 
-import { type Category } from '@/lib/getCategories';
-import { TabNavItem } from '@/ui/TabNavItem';
-import { useSelectedLayoutSegments } from 'next/navigation';
+import { useSelectedLayoutSegments } from 'next/navigation'
+
+import { type Category } from '@/lib/getCategories'
+import { TabNavItem } from '@/ui/TabNavItem'
 
 const SubCategoryNav = ({ category }: { category: Category }) => {
-  const [selectedLayoutSegments] = useSelectedLayoutSegments();
+  const [selectedLayoutSegments] = useSelectedLayoutSegments()
 
   return (
-    <div className="flex items-center space-x-4">
-      <TabNavItem
-        href={`/layouts/${category.slug}`}
-        isActive={!selectedLayoutSegments}
-      >
+    <div className='flex items-center space-x-4'>
+      <TabNavItem href={`/layouts/${category.slug}`} isActive={!selectedLayoutSegments}>
         All
       </TabNavItem>
 
-      {category.items.map((item) => (
+      {category.items.map(item => (
         <TabNavItem
           key={item.slug}
           href={`/layouts/${category.slug}/${item.slug}`}
-          isActive={item.slug === selectedLayoutSegments}
-        >
+          isActive={item.slug === selectedLayoutSegments}>
           {item.name}
         </TabNavItem>
       ))}
     </div>
-  );
-};
+  )
+}
 
-export default SubCategoryNav;
+export default SubCategoryNav
