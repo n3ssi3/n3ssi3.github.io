@@ -7,3 +7,13 @@
   font-family: 'Hind Siliguri Light';
   src: url("../public/fonts/Hind Siliguri Light.ttf");
 }
+
+.hero-overlay {
+  background-image: linear-gradient(120deg, theme('colors.pink'), theme('colors.violet'));
+  opacity: .75;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}

@@ -5,8 +5,10 @@ import Link from 'next/link'
 import { useSelectedLayoutSegments } from 'next/navigation'
 
 import { demos } from '@/lib/demos'
+import { faMoon, faSun } from '@fortawesome/free-regular-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import { useTheme } from './ThemeContext'
+import { useTheme } from '../ThemeContext'
 
 export default function GlobalNav() {
   const [selectedLayoutSegments] = useSelectedLayoutSegments()
@@ -17,6 +19,7 @@ export default function GlobalNav() {
       <button
         className='rounded-lg px-3 py-1 text-sm font-medium bg-zinc-700 text-zinc-100 hover:bg-zinc-500 hover:text-white'
         onClick={() => setDarkMode(!darkMode)}>
+        <FontAwesomeIcon icon={darkMode ? faSun : faMoon} />
         {darkMode ? 'Light Mode' : 'Dark Mode'}
       </button>
       {demos.map(demo => {

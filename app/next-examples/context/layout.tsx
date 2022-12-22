@@ -1,4 +1,4 @@
-import { CounterProvider } from 'app/context/CounterContext'
+import { CounterProvider } from 'app/next-examples/context/CounterContext'
 import React, { use } from 'react'
 
 import { fetchCategories } from '@/lib/getCategories'
