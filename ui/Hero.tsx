@@ -1,12 +1,21 @@
 'use client'
 
+import Link from 'next/link'
 import { useTheme } from 'app/ThemeContext'
 import clsx from 'clsx'
 import Image from 'next/image'
 import React, { useEffect, useRef, useState } from 'react'
+// import { useTranslation } from 'next-i18next'
+// import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+
+import type {
+  GetServerSideProps,
+  InferGetServerSidePropsType,
+} from 'next'
 
 import { faMoon, faSun } from '@fortawesome/free-regular-svg-icons'
 import { faGear } from '@fortawesome/free-solid-svg-icons'
+import { faFacebook, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import Bahasa from '../public/Bahasa.svg'
@@ -15,8 +24,14 @@ import French from '../public/French.svg'
 import German from '../public/German.svg'
 import logo from '../public/logo-no-background.svg'
 
-export default function Hero() {
+type Props = {
+  // Add custom props here
+}
+
+const Hero = () => {
   const [darkMode, setDarkMode] = useTheme()
+  const t = string => string
+  // const { t } = useTranslation('hero')
   const [settings, setSettings] = useState(false)
   const ref = useRef(null)
 
@@ -40,15 +55,21 @@ export default function Hero() {
           </ul>
         </nav>
         <main className='col-span-3'>
-          <div className='relative'>
-            <div className='absolute w-full'>
-              <img
-                src='https://res.cloudinary.com/imajin/image/upload/v1583588473/profile/banner_cylvs2.jpg'
-                className='w-full'
-                alt='Vanessa Aryanata'
-              />
-              <div className='hero-overlay'></div>
+          <div className='relative min-h-[450px]' style={{
+            background: 'url(https://res.cloudinary.com/imajin/image/upload/v1583588473/profile/banner_cylvs2.jpg)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center'
+          }}>
+            <div className='hero-overlay'></div>
+
+            <div className='absolute w-full text-white dark:text-black top-0 left-0 p-10 lg:pt-20 lg:px-32'>
+              <h4 className='text-xl xl:text-2xl mb-2'>Hello World,</h4>
+              <h2 className='text-2xl xl:text-6xl mb-4'>I am Vanessa,<br/>Web Developer</h2>
+              <h5 className='xl:text-xl mb-4'>
+                I create an efficient frontend web developer who specializes in React.js.
+              </h5>
             </div>
+
             <div
               className='absolute top-10 right-10 text-right text-white dark:text-black'
               ref={ref}>
@@ -67,64 +88,63 @@ export default function Hero() {
                       className='rounded-lg ml-2 px-3 py-1 text-sm font-medium bg-zinc-700 text-zinc-100 hover:bg-zinc-500 hover:text-white'
                       onClick={() => setDarkMode(!darkMode)}>
                       <FontAwesomeIcon icon={darkMode ? faSun : faMoon} />
-                      <span className='ml-2'>{darkMode ? 'Light Mode' : 'Dark Mode'}</span>
+                      <span className='ml-2'>{darkMode ? t('mode.light') : t('mode.dark')}</span>
                     </button>
                   </li>
                   <li className='pt-4 flex justify-between'>
                     <span className='font-semibold capitalize'>Language</span>
                     <ul>
                       <li>
-                        <a data-lang='en' href='#' className='flex mb-1'>
-                          <Image alt='English' src={English} width={30} height={20} />
-                          <span className='ml-2'>English</span>
-                        </a>
+                        <Link href="/" locale='en'>
+                          <button className='flex mb-1'>
+                            <Image alt={t('language.en')} src={English} width={30} height={20} />
+                            <span className='ml-2'>{t('language.en')}</span>
+                          </button>
+                        </Link>
                       </li>
                       <li>
-                        <a data-lang='de' href='#' className='flex mb-1'>
-                          <Image alt='German' src={German} width={30} height={20} />
-                          <span className='ml-2'>Deutsch</span>
-                        </a>
+                        <Link href="/" locale='de'>
+                          <button className='flex mb-1'>
+                            <Image alt={t('language.de')} src={German} width={30} height={20} />
+                            <span className='ml-2'>{t('language.de')}</span>
+                          </button>
+                        </Link>
                       </li>
                       <li>
-                        <a data-lang='fr' href='#' className='flex mb-1'>
-                          <Image alt='French' src={French} width={30} height={20} />
-                          <span className='ml-2'>Français</span>
-                        </a>
+                        <Link href="/" locale='fr'>
+                          <button className='flex mb-1'>
+                            <Image alt={t('language.fr')} src={French} width={30} height={20} />
+                            <span className='ml-2'>{t('language.fr')}</span>
+                          </button>
+                        </Link>
                       </li>
                       <li>
-                        <a data-lang='id' href='#' className='flex mb-1'>
-                          <Image alt='Bahasa' src={Bahasa} width={30} height={20} />
-                          <span className='ml-2'>󠁥󠁮󠁧󠁿Indonesia</span>
-                        </a>
+                        <Link href="/" locale='id'>
+                          <button className='flex mb-1'>
+                            <Image alt={t('language.id')} src={Bahasa} width={30} height={20} />
+                            <span className='ml-2'>{t('language.id')}</span>
+                          </button>
+                        </Link>
                       </li>
                     </ul>
                   </li>
                 </ul>
               </div>
             </div>
-            <div className='text'>
-              <h4 className='use-text-title2'>Hello World,</h4>
-              <h2 className='use-text-title'>I am Jena, UI Designer</h2>
-              <div className='hidden-sm-down'>
-                <h5 className='use-text-subtitle2'>
-                  I create an efficient UI mobile or web design also UX research to make sure that I
-                  get what people needs and strategy for interaction design.
-                </h5>
-                <div className='socmed'>
-                  <a className='btn-icon margin waves-effect' href='#'>
-                    <i className='ion-social-facebook'></i>
-                  </a>{' '}
-                  <a className='btn-icon margin waves-effect' href='#'>
-                    <i className='ion-social-twitter'></i>
-                  </a>{' '}
-                  <a className='btn-icon margin waves-effect' href='#'>
-                    <i className='ion-social-instagram'></i>
-                  </a>{' '}
-                  <a className='btn-icon margin waves-effect' href='#'>
-                    <i className='ion-social-linkedin'></i>
-                  </a>
-                </div>
-              </div>
+
+            <div className='absolute w-full whitespace-nowrap text-center sm:text-left text-white dark:text-black bottom-5 lg:bottom-20 px-10 lg:px-32'>
+              <a href="https://www.facebook.com/nessie.arya" target='_blank'>
+                <FontAwesomeIcon icon={faFacebook} size='2x' className='mr-3' />
+              </a>
+              <a href="https://twitter.com/n3ssi3" target='_blank'>
+                <FontAwesomeIcon icon={faTwitter} size='2x' className='mr-3' />
+              </a>
+              <a href="https://www.instagram.com/n3ssi3.m3" target='_blank'>
+                <FontAwesomeIcon icon={faInstagram} size='2x' className='mr-3' />
+              </a>
+              <a href="https://www.linkedin.com/in/vanessa-aryanata" target='_blank'>
+                <FontAwesomeIcon icon={faLinkedin} size='2x' />
+              </a>
             </div>
           </div>
         </main>
@@ -132,3 +152,19 @@ export default function Hero() {
     </section>
   )
 }
+
+// export const getServerSideProps: GetServerSideProps<Props> = async ({
+//   locale,
+// }) => {
+//   console.log(locale)
+//   return {}
+//   // return ({
+//   //   props: {
+//   //     ...(await serverSideTranslations(locale ?? 'en', [
+//   //       'hero',
+//   //     ])),
+//   //   },
+//   // })
+// }
+
+export default Hero
