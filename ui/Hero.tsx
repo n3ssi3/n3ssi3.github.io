@@ -49,7 +49,7 @@ const Hero: () => Element = (): ReactElement<Props> => {
               backgroundPosition: 'center'
             }}>
             <div className='bg-gradient absolute w-full h-full top-0 left-0'></div>
-            <div className='p-10 pb-0 lg:pt-10' ref={ref}>
+            <div className='p-10 pb-0 lg:pt-20' ref={ref}>
               <div className='relative flex justify-between md:justify-end'>
                 <MobileNavigation
                   isNavOpen={isNavOpen}
@@ -73,7 +73,7 @@ const Hero: () => Element = (): ReactElement<Props> => {
               </div>
             </div>
 
-            <div className='relative z-10 w-full text-white dark:text-black top-0 left-0 p-10 pt-5 lg:pt-10 lg:px-32'>
+            <div className='relative z-10 w-full text-white dark:text-black top-0 left-0 p-10 pt-5 lg:pt-0 lg:px-32'>
               <h4 className='text-xl xl:text-2xl mb-2'>Hello World,</h4>
               <h2 className='text-2xl xl:text-6xl mb-4'>
                 I am Vanessa,
@@ -85,7 +85,7 @@ const Hero: () => Element = (): ReactElement<Props> => {
               </h5>
             </div>
 
-            <div className='relative z-10 w-full whitespace-nowrap text-center sm:text-left text-white dark:text-black pb-10 px-10 lg:px-32'>
+            <div className='relative z-10 w-full whitespace-nowrap text-center sm:text-left text-white dark:text-black pb-10 px-10 lg:px-32 lg:pb-32'>
               <a href='https://www.facebook.com/nessie.arya' target='_blank'>
                 <FontAwesomeIcon icon={faFacebook} size='2x' className='mr-3' />
               </a>

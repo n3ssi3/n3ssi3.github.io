@@ -8,13 +8,13 @@ const Navigation = () => (
       <Link href='/'>Home</Link>
     </li>
     <li className='p-2'>
-      <Link href='/#about'>About me</Link>
+      <Link href='/#about' scroll={false} prefetch={false}>About me</Link>
     </li>
     <li className='p-2'>
-      <Link href='/#work'>Work Experience</Link>
+      <Link href='/#work' scroll={false} prefetch={false}>Work Experience</Link>
     </li>
     <li className='p-2'>
-      <Link href='/#portfolio'>Portfolio</Link>
+      <Link href='/#portfolio' scroll={false} prefetch={false}>Portfolio</Link>
     </li>
   </ul>
 )

@@ -11,7 +11,7 @@ const Work = () => (
           Vanessa Aryanata
         </h3>
       </div>
-      <div className='col-span-3'>
+      <div className='col-span-3 dark:text-white'>
         <div className='grid gap-4 grid-cols-2'>
           <div className='history'>
             <h5 className='title-timeline use-text-subtitle'>WORK EXPERIENCE</h5>
