@@ -14,7 +14,7 @@ import English from '../public/English.svg'
 import French from '../public/French.svg'
 import German from '../public/German.svg'
 
-const Settings = ({ settings, setSettings }) => {
+const Settings = ({ settings, setSettings, setIsNavOpen }) => {
   const t = string => string
   // const { t } = useTranslation('hero')
 
@@ -24,22 +24,28 @@ const Settings = ({ settings, setSettings }) => {
       <button
         type='button'
         className='text-white dark:text-black z-10'
-        onClick={() => setSettings(!settings)}>
+        onClick={() => {
+          setSettings(!settings)
+          setIsNavOpen(false)
+        }}>
         <FontAwesomeIcon icon={faGear} size='lg' />
       </button>
       <div
-        className={clsx('absolute bg-zinc-800 text-white p-4 z-20 mt-2 top-full right-10', {
-          block: settings,
-          hidden: !settings
-        })}>
+        className={clsx(
+          'absolute bg-zinc-800 text-white p-4 z-50 mt-2 w-full sm:w-auto top-full right-0',
+          {
+            block: settings,
+            hidden: !settings
+          }
+        )}>
         <ul className='divide-y divide-gold'>
           <li className='pb-4 flex justify-between'>
             <span className='font-semibold capitalize'>Theme mode</span>
             <button
-              className='rounded-lg ml-2 px-3 py-1 text-sm font-medium bg-zinc-700 text-zinc-100 hover:bg-zinc-500 hover:text-white'
+              className='rounded-lg whitespace-nowrap ml-2 px-3 py-1 text-sm font-medium bg-zinc-700 text-zinc-100 hover:bg-zinc-500 hover:text-white'
               onClick={() => setDarkMode(!darkMode)}>
               <FontAwesomeIcon icon={darkMode ? faSun : faMoon} />
-              <span className='ml-2 hidden md:block'>
+              <span className='ml-2 hidden md:inline-block'>
                 {darkMode ? t('mode.light') : t('mode.dark')}
               </span>
             </button>

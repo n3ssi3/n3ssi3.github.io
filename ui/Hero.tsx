@@ -8,6 +8,7 @@ import React, { MutableRefObject, ReactElement, useEffect, useRef, useState } fr
 import { faFacebook, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+import banner from '../public/banner.jpg'
 import logo from '../public/logo-no-background.svg'
 import { MobileNavigation, Navigation } from './Navigation'
 import Settings from './Settings'
@@ -18,6 +19,8 @@ type Props = {
 
 const Hero: () => Element = (): ReactElement<Props> => {
   const [settings, setSettings] = useState(false)
+  const [isNavOpen, setIsNavOpen] = useState(false)
+
   const ref: MutableRefObject<null> = useRef(null)
 
   useEffect((): (() => void) => {
@@ -41,27 +44,33 @@ const Hero: () => Element = (): ReactElement<Props> => {
           <div
             className='relative'
             style={{
-              background:
-                'url(https://res.cloudinary.com/imajin/image/upload/v1583588473/profile/banner_cylvs2.jpg)',
+              background: `url(${banner})`,
               backgroundSize: 'cover',
               backgroundPosition: 'center'
             }}>
-            <div className='hero-overlay'></div>
+            <div className='bg-gradient absolute w-full h-full top-0 left-0'></div>
+            <div className='p-10 pb-0 lg:pt-10' ref={ref}>
+              <div className='relative flex justify-between md:justify-end'>
+                <MobileNavigation
+                  isNavOpen={isNavOpen}
+                  setIsNavOpen={setIsNavOpen}
+                  setSettings={setSettings}
+                />
 
-            <div
-              className='relative p-10 pb-0 lg:pt-10 flex justify-between md:justify-end'
-              ref={ref}>
-              <MobileNavigation />
+                <Image
+                  alt='Vanessa Aryanata Logo'
+                  src={logo}
+                  width={60}
+                  height={60}
+                  className='md:hidden'
+                />
 
-              <Image
-                alt='Vanessa Aryanata Logo'
-                src={logo}
-                width={60}
-                height={60}
-                className='md:hidden'
-              />
-
-              <Settings settings={settings} setSettings={setSettings} />
+                <Settings
+                  settings={settings}
+                  setSettings={setSettings}
+                  setIsNavOpen={setIsNavOpen}
+                />
+              </div>
             </div>
 
             <div className='relative z-10 w-full text-white dark:text-black top-0 left-0 p-10 pt-5 lg:pt-10 lg:px-32'>
@@ -71,7 +80,7 @@ const Hero: () => Element = (): ReactElement<Props> => {
                 <br />
                 Web Developer
               </h2>
-              <h5 className='xl:text-xl mb-4'>
+              <h5 className='xl:text-xl mb-4 lg:pr-52'>
                 I create an efficient frontend web developer who specializes in React.js.
               </h5>
             </div>
