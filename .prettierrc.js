@@ -11,5 +11,5 @@ module.exports = {
   arrowParens: 'avoid',
   importOrderSeparation: true,
   importOrderSortSpecifiers: true,
-  importOrder: ['^@(.*)/(.*)$', '^[./]']
+  importOrder: ['^@(.*)/(.*)$', '^app/(.*)$', '^[./]']
 }

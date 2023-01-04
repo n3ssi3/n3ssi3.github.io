@@ -6,7 +6,7 @@ import React from 'react'
 import { fetchCategories } from '@/lib/getCategories'
 import { Boundary } from '@/ui/Boundary'
 import ClickCounter from '@/ui/ClickCounter'
-import HooksClient from '@/ui/HooksClient'
+import HooksClient from '@/ui/next-examples/HooksClient'
 
 import CategoryNav from './CategoryNav'
 

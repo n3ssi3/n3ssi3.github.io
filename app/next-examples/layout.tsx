@@ -1,7 +1,7 @@
 import React from 'react'
 
 import '@/styles/dist.css'
-import AddressBar from '@/ui/AddressBar'
+import AddressBar from '@/ui/next-examples/AddressBar'
 
 import GlobalNav from './GlobalNav'
 
