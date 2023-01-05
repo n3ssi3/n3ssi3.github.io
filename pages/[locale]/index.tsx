@@ -11,16 +11,14 @@ import Portfolio from '../../components/Portfolio'
 import Work from '../../components/Work'
 import { getI18nPaths, i18nConfig } from '../../getI18nPaths'
 
-const inter = Inter({ subsets: ['latin'] })
-
-export default function Home({ ...pageProps }) {
+export default function Home() {
   return (
     <Layout>
-      <Hero {...pageProps} />
-      <About {...pageProps} />
-      <Work {...pageProps} />
-      <Counter {...pageProps} />
-      <Portfolio {...pageProps} />
+      <Hero />
+      <About />
+      <Work />
+      <Counter />
+      <Portfolio />
     </Layout>
   )
 }

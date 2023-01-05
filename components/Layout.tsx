@@ -1,13 +1,13 @@
 import clsx from 'clsx'
+import { useTranslation } from 'next-i18next'
 import Head from 'next/head'
 import React, { useEffect } from 'react'
-import { useTranslation } from 'react-i18next'
 
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import localFont from '@next/font/local'
 
-import { useTheme } from '../app/ThemeContext'
+import { useTheme } from '../context/ThemeContext'
 
 // not yet supported with turbo
 const myFont = localFont({ src: '../public/fonts/Hind Siliguri Light.ttf' })

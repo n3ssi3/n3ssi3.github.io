@@ -1,7 +1,7 @@
 import { appWithTranslation } from 'next-i18next'
 import type { AppProps } from 'next/app'
 
-import { ThemeProvider } from '../app/ThemeContext'
+import { ThemeProvider } from '../context/ThemeContext'
 // Import the CSS
 import '../styles/globals.css'
 

@@ -31,7 +31,7 @@ const Index = ({ locales }: Props) => {
         }
       }
     }
-  }, [locales, router])
+  }, [])
 
   return (
     <div className='flex w-screen h-screen bg-gradient justify-center items-center'>

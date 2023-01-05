@@ -8,7 +8,7 @@ import { faMoon, faSun } from '@fortawesome/free-regular-svg-icons'
 import { faGear } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import { useTheme } from '../app/ThemeContext'
+import { useTheme } from '../context/ThemeContext'
 import Bahasa from '../public/Bahasa.svg'
 import English from '../public/English.svg'
 import French from '../public/French.svg'

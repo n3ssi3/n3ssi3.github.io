@@ -1,32 +1,33 @@
 import clsx from 'clsx'
+import { useTranslation } from 'next-i18next'
 import Link from 'next/link'
 import React from 'react'
-import { useTranslation } from 'react-i18next'
 
 const Navigation = () => {
   const { t } = useTranslation()
   return (
-  <ul className='dark:text-white'>
-    <li className='p-2'>
-      <Link href='/'>{t('nav.home')}</Link>
-    </li>
-    <li className='p-2'>
-      <Link href='/#about' scroll={false} prefetch={false}>
-      {t('nav.about')}
-      </Link>
-    </li>
-    <li className='p-2'>
-      <Link href='/#work' scroll={false} prefetch={false}>
-      {t('nav.work')}
-      </Link>
-    </li>
-    <li className='p-2'>
-      <Link href='/#portfolio' scroll={false} prefetch={false}>
-      {t('nav.portfolio')}
-      </Link>
-    </li>
-  </ul>
-)}
+    <ul className='dark:text-white'>
+      <li className='p-2'>
+        <Link href='/'>{t('nav.home')}</Link>
+      </li>
+      <li className='p-2'>
+        <Link href='/#about' scroll={false} prefetch={false}>
+          {t('nav.about')}
+        </Link>
+      </li>
+      <li className='p-2'>
+        <Link href='/#work' scroll={false} prefetch={false}>
+          {t('nav.work')}
+        </Link>
+      </li>
+      <li className='p-2'>
+        <Link href='/#portfolio' scroll={false} prefetch={false}>
+          {t('nav.portfolio')}
+        </Link>
+      </li>
+    </ul>
+  )
+}
 
 type Props = {
   setSettings: (settings: boolean) => void

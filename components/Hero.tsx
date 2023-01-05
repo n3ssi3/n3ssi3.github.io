@@ -74,13 +74,11 @@ const Hero = ({ ...pageProps }) => {
             <div className='relative z-10 w-full text-white dark:text-black top-0 left-0 p-10 pt-5 lg:pt-0 lg:px-32'>
               <h4 className='text-xl xl:text-2xl mb-2'>{t('hero.hello')}</h4>
               <h2 className='text-2xl xl:text-6xl mb-4'>
-              {t('hero.iam')}
+                {t('hero.iam')}
                 <br />
                 {t('hero.profession')}
               </h2>
-              <h5 className='xl:text-xl mb-4 lg:pr-52'>
-              {t('hero.lead')}
-              </h5>
+              <h5 className='xl:text-xl mb-4 lg:pr-52'>{t('hero.lead')}</h5>
             </div>
 
             <div className='relative z-10 w-full whitespace-nowrap text-center sm:text-left text-white dark:text-black pb-10 px-10 lg:px-32 lg:pb-32'>
