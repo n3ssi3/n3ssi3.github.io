@@ -8,6 +8,7 @@ import Hero from '../components/Hero'
 import Layout from '../components/Layout'
 import Portfolio from '../components/Portfolio'
 import Work from '../components/Work'
+import { GetServerSideProps } from 'next'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -23,7 +24,7 @@ export default function Home({ ...pageProps }) {
   )
 }
 
-export const getServerSideProps: GetServerSideProps<Props> = async ({ locale }) => {
+export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
   return {
     props: {
       ...(await serverSideTranslations(locale ?? 'en', ['common', 'hero']))

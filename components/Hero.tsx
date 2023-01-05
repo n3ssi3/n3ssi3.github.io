@@ -2,7 +2,7 @@
 
 // import { useTranslation } from 'next-i18next'
 import Image from 'next/image'
-import React, { MutableRefObject, ReactElement, useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 
 import { faFacebook, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -12,15 +12,19 @@ import logo from '../public/logo-no-background.svg'
 import { MobileNavigation, Navigation } from './Navigation'
 import Settings from './Settings'
 
+
 type Props = {
-  // Add custom props here
+  settings: boolean;
+  setSettings: (settings: boolean) => void;
+  isNavOpen: boolean;
+  setIsNavOpen: (isNavOpen: boolean) => void;
 }
 
 const Hero = ({ ...pageProps }) => {
-  const [settings, setSettings] = useState(false)
-  const [isNavOpen, setIsNavOpen] = useState(false)
+  const [settings, setSettings] = useState<boolean>(false)
+  const [isNavOpen, setIsNavOpen] = useState<boolean>(false)
 
-  const ref: MutableRefObject<null> = useRef(null)
+  const ref = useRef<HTMLInputElement>(null)
 
   useEffect((): (() => void) => {
     function handleClickOutside(event: { target: any }): void {
@@ -31,6 +35,7 @@ const Hero = ({ ...pageProps }) => {
     document.addEventListener('mousedown', handleClickOutside)
     return () => document.removeEventListener('mousedown', handleClickOutside)
   }, [ref])
+
 
   return (
     <section className='md:container md:mx-auto'>

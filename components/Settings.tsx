@@ -14,7 +14,13 @@ import English from '../public/English.svg'
 import French from '../public/French.svg'
 import German from '../public/German.svg'
 
-const Settings = ({ settings, setSettings, setIsNavOpen }) => {
+type Props = {
+  settings: boolean;
+  setSettings: (settings: boolean) => void;
+  setIsNavOpen: (isNavOpen: boolean) => void;
+}
+
+const Settings = ({ settings, setSettings, setIsNavOpen }: Props) => {
   const { t } = useTranslation('hero')
 
   const [darkMode, setDarkMode] = useTheme()
