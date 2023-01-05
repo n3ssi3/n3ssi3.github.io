@@ -12,12 +12,11 @@ import logo from '../public/logo-no-background.svg'
 import { MobileNavigation, Navigation } from './Navigation'
 import Settings from './Settings'
 
-
 type Props = {
-  settings: boolean;
-  setSettings: (settings: boolean) => void;
-  isNavOpen: boolean;
-  setIsNavOpen: (isNavOpen: boolean) => void;
+  settings: boolean
+  setSettings: (settings: boolean) => void
+  isNavOpen: boolean
+  setIsNavOpen: (isNavOpen: boolean) => void
 }
 
 const Hero = ({ ...pageProps }) => {
@@ -35,7 +34,6 @@ const Hero = ({ ...pageProps }) => {
     document.addEventListener('mousedown', handleClickOutside)
     return () => document.removeEventListener('mousedown', handleClickOutside)
   }, [ref])
-
 
   return (
     <section className='md:container md:mx-auto'>

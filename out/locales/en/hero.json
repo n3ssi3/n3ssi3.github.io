@@ -1,0 +1,12 @@
+{
+  "mode": {
+    "light": "Light Mode",
+    "dark": "Dark Mode"
+  },
+  "language": {
+    "en": "English",
+    "de": "German",
+    "fr": "French",
+    "id": "Indonesian"
+  }
+}

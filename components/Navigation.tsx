@@ -26,9 +26,9 @@ const Navigation = () => (
 )
 
 type Props = {
-  setSettings: (settings: boolean) => void;
-  isNavOpen: boolean;
-  setIsNavOpen: (isNavOpen: boolean) => void;
+  setSettings: (settings: boolean) => void
+  isNavOpen: boolean
+  setIsNavOpen: (isNavOpen: boolean) => void
 }
 const MobileNavigation = ({ isNavOpen, setIsNavOpen, setSettings }: Props) => {
   return (

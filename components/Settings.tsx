@@ -13,11 +13,12 @@ import Bahasa from '../public/Bahasa.svg'
 import English from '../public/English.svg'
 import French from '../public/French.svg'
 import German from '../public/German.svg'
+import { StaticI18nLink } from './StaticI18nLink'
 
 type Props = {
-  settings: boolean;
-  setSettings: (settings: boolean) => void;
-  setIsNavOpen: (isNavOpen: boolean) => void;
+  settings: boolean
+  setSettings: (settings: boolean) => void
+  setIsNavOpen: (isNavOpen: boolean) => void
 }
 
 const Settings = ({ settings, setSettings, setIsNavOpen }: Props) => {
@@ -59,36 +60,36 @@ const Settings = ({ settings, setSettings, setIsNavOpen }: Props) => {
             <span className='font-semibold capitalize'>Language</span>
             <ul>
               <li>
-                <Link href='/' locale='en'>
+                <StaticI18nLink href='/' locale='en'>
                   <button className='flex mb-1'>
                     <Image alt={t('language.en')} src={English} width={30} height={20} />
                     <span className='ml-2 hidden md:block'>{t('language.en')}</span>
                   </button>
-                </Link>
+                </StaticI18nLink>
               </li>
               <li>
-                <Link href='/' locale='de'>
+                <StaticI18nLink href='/' locale='de'>
                   <button className='flex mb-1'>
                     <Image alt={t('language.de')} src={German} width={30} height={20} />
                     <span className='ml-2 hidden md:block'>{t('language.de')}</span>
                   </button>
-                </Link>
+                </StaticI18nLink>
               </li>
               <li>
-                <Link href='/' locale='fr'>
+                <StaticI18nLink href='/' locale='fr'>
                   <button className='flex mb-1'>
                     <Image alt={t('language.fr')} src={French} width={30} height={20} />
                     <span className='ml-2 hidden md:block'>{t('language.fr')}</span>
                   </button>
-                </Link>
+                </StaticI18nLink>
               </li>
               <li>
-                <Link href='/' locale='id'>
+                <StaticI18nLink href='/' locale='id'>
                   <button className='flex mb-1'>
                     <Image alt={t('language.id')} src={Bahasa} width={30} height={20} />
                     <span className='ml-2 hidden md:block'>{t('language.id')}</span>
                   </button>
-                </Link>
+                </StaticI18nLink>
               </li>
             </ul>
           </li>
