@@ -2,28 +2,29 @@ import clsx from 'clsx'
 import { useTranslation } from 'next-i18next'
 import Link from 'next/link'
 import React from 'react'
+import { StaticI18nLink } from './StaticI18nLink'
 
 const Navigation = () => {
   const { t } = useTranslation()
   return (
     <ul className='dark:text-white'>
       <li className='p-2'>
-        <Link href='/'>{t('nav.home')}</Link>
+        <StaticI18nLink href='/'>{t('nav.home')}</StaticI18nLink>
       </li>
       <li className='p-2'>
-        <Link href='/#about' scroll={false} prefetch={false}>
+        <StaticI18nLink href='/#about'>
           {t('nav.about')}
-        </Link>
+        </StaticI18nLink>
       </li>
       <li className='p-2'>
-        <Link href='/#work' scroll={false} prefetch={false}>
+        <StaticI18nLink href='/#work'>
           {t('nav.work')}
-        </Link>
+        </StaticI18nLink>
       </li>
       <li className='p-2'>
-        <Link href='/#portfolio' scroll={false} prefetch={false}>
+        <StaticI18nLink href='/#portfolio'>
           {t('nav.portfolio')}
-        </Link>
+        </StaticI18nLink>
       </li>
     </ul>
   )
