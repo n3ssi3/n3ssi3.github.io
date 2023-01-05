@@ -1,3 +1,28 @@
 {
-  "title": "Daftar Riwayat Hidup - Vanessa Aryanata"
+  "title": "Daftar Riwayat Hidup - Vanessa Aryanata",
+  "mode": {
+    "title": "Desain CV",
+    "light": "Cahaya",
+    "dark": "Gelap"
+  },
+  "language": {
+    "title": "Bahasa",
+    "en": "Ingris",
+    "de": "Jerman",
+    "fr": "Perancis",
+    "id": "Indonesia"
+  },
+  "nav": {
+    "menu": "Buka navigasi",
+    "home": "Home",
+    "about": "Tentang saya",
+    "work": "Pengalaman kerja",
+    "portfolio": "Portfolio"
+  },
+  "hero": {
+    "hello": "Halo semuanya,",
+    "iam": "Saya Vanessa,",
+    "profession": "Pengembang Web",
+    "lead": "Saya membuat aplikasi web yang efisien menggunakan tumpukan teknologi yang luas, lebih disukai ReactJs / NextJs dan TailwindCss."
+  }
 }

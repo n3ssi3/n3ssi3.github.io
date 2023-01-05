@@ -1,3 +1,28 @@
 {
-  "title": "Curriculum Vitae - Vanessa Aryanata"
+  "title": "Curriculum Vitae - Vanessa Aryanata",
+  "mode": {
+    "title": "Theme",
+    "light": "Light",
+    "dark": "Dark"
+  },
+  "language": {
+    "title": "Language",
+    "en": "English",
+    "de": "German",
+    "fr": "French",
+    "id": "Indonesian"
+  },
+  "nav": {
+    "menu": "Open main menu",
+    "home": "Home",
+    "about": "About me",
+    "work": "Work experience",
+    "portfolio": "Portfolio"
+  },
+  "hero": {
+    "hello": "Hello World,",
+    "iam": "I am Vanessa,",
+    "profession": "Web Developer",
+    "lead": "I create efficient web applications using a broad tech stack, preferrably ReactJs / NextJs and TailwindCss."
+  }
 }

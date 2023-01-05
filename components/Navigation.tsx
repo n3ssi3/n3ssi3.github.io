@@ -1,29 +1,32 @@
 import clsx from 'clsx'
 import Link from 'next/link'
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
-const Navigation = () => (
+const Navigation = () => {
+  const { t } = useTranslation()
+  return (
   <ul className='dark:text-white'>
     <li className='p-2'>
-      <Link href='/'>Home</Link>
+      <Link href='/'>{t('nav.home')}</Link>
     </li>
     <li className='p-2'>
       <Link href='/#about' scroll={false} prefetch={false}>
-        About me
+      {t('nav.about')}
       </Link>
     </li>
     <li className='p-2'>
       <Link href='/#work' scroll={false} prefetch={false}>
-        Work Experience
+      {t('nav.work')}
       </Link>
     </li>
     <li className='p-2'>
       <Link href='/#portfolio' scroll={false} prefetch={false}>
-        Portfolio
+      {t('nav.portfolio')}
       </Link>
     </li>
   </ul>
-)
+)}
 
 type Props = {
   setSettings: (settings: boolean) => void
@@ -31,6 +34,7 @@ type Props = {
   setIsNavOpen: (isNavOpen: boolean) => void
 }
 const MobileNavigation = ({ isNavOpen, setIsNavOpen, setSettings }: Props) => {
+  const { t } = useTranslation()
   return (
     <>
       <button
@@ -43,7 +47,7 @@ const MobileNavigation = ({ isNavOpen, setIsNavOpen, setSettings }: Props) => {
         className='inline-flex items-center relative md:hidden rounded-lg text-white focus:outline-none dark:text-black'
         aria-controls='navbar-default'
         aria-expanded='false'>
-        <span className='sr-only'>Open main menu</span>
+        <span className='sr-only'>{t('nav.menu')}</span>
         <svg
           className='w-6 h-6'
           aria-hidden='true'

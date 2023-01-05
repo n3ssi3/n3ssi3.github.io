@@ -22,7 +22,7 @@ type Props = {
 }
 
 const Settings = ({ settings, setSettings, setIsNavOpen }: Props) => {
-  const { t } = useTranslation('hero')
+  const { t } = useTranslation()
 
   const [darkMode, setDarkMode] = useTheme()
   return (
@@ -46,7 +46,7 @@ const Settings = ({ settings, setSettings, setIsNavOpen }: Props) => {
         )}>
         <ul className='divide-y divide-gold'>
           <li className='pb-4 flex justify-between'>
-            <span className='font-semibold capitalize'>Theme mode</span>
+            <span className='font-semibold capitalize'>{t('mode.title')}</span>
             <button
               className='rounded-lg whitespace-nowrap ml-2 px-3 py-1 text-sm font-medium bg-zinc-700 text-zinc-100 hover:bg-zinc-500 hover:text-white'
               onClick={() => setDarkMode(!darkMode)}>
@@ -57,7 +57,7 @@ const Settings = ({ settings, setSettings, setIsNavOpen }: Props) => {
             </button>
           </li>
           <li className='pt-4 flex justify-between'>
-            <span className='font-semibold capitalize'>Language</span>
+            <span className='font-semibold capitalize'>{t('language.title')}</span>
             <ul>
               <li>
                 <StaticI18nLink href='/' locale='en'>

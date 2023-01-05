@@ -1,3 +1,28 @@
 {
-  "title": "Lebenslauf - Vanessa Aryanata"
+  "title": "Lebenslauf - Vanessa Aryanata",
+  "mode": {
+    "title": "CV Design",
+    "light": "Hell",
+    "dark": "Dunkel"
+  },
+  "language": {
+    "title": "Sprache",
+    "en": "Englisch",
+    "de": "Deutsch",
+    "fr": "Französisch",
+    "id": "Indonesisch"
+  },
+  "nav": {
+    "menu": "Navigation öffnen",
+    "home": "Home",
+    "about": "Über mich",
+    "work": "Arbeitserfahrung",
+    "portfolio": "Portfolio"
+  },
+  "hero": {
+    "hello": "Willkommen,",
+    "iam": "Ich heisse Vanessa,",
+    "profession": "und bin Web Entwicklerin",
+    "lead": "Ich erstelle effiziente Webanwendungen mit einem breiten Tech-Stack, vorzugsweise ReactJs / NextJs und TailwindCss."
+  }
 }
