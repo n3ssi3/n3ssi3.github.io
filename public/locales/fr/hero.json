@@ -2,5 +2,11 @@
   "mode": {
     "light": "Mode lumière",
     "dark": "Mode sombre"
+  },
+  "language": {
+    "en": "Anglais",
+    "de": "Allemagne",
+    "fr": "Français",
+    "id": "Indonésien"
   }
 }

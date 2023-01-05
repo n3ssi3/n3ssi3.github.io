@@ -2,5 +2,11 @@
   "mode": {
     "light": "Heller Modus",
     "dark": "Dunkler Modus"
+  },
+  "language": {
+    "en": "Englisch",
+    "de": "Deutsch",
+    "fr": "Französisch",
+    "id": "Indonesisch"
   }
 }

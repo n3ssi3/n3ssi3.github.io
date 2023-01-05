@@ -2,5 +2,11 @@
   "mode": {
     "light": "Modus cahaya",
     "dark": "Mode gelap"
+  },
+  "language": {
+    "en": "Ingris",
+    "de": "Jerman",
+    "fr": "Perancis",
+    "id": "Bahasa"
   }
 }

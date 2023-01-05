@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @font-face {
   font-family: 'Hind Siliguri Light';
   src: url('../public/fonts/Hind Siliguri Light.ttf');
@@ -146,56 +147,7 @@
 .progress-wrap ul li h5 {
   font-weight: var(--font-bold);
 }
-.text-icon {
-  margin-bottom: 8px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-.text-icon i {
-  font-size: 28px;
-}
-.theme--light .text-icon i {
-  color: rgba(0, 0, 0, 0.54);
-}
-.theme--dark .text-icon i {
-  color: rgba(255, 255, 255, 0.7);
-}
-.text-icon h5 {
-  margin-left: 8px;
-}
-.text-icon h5 {
-  margin-right: 8px;
-}
-.zero .progress .progress-linear {
-  width: 0 !important;
-}
-.progress {
-  border-radius: 10px;
-  height: 10px;
-}
-.theme--light .progress {
-  background: rgba(0, 0, 0, 0.12);
-}
-.theme--dark .progress {
-  background: rgba(255, 255, 255, 0.12);
-}
-.progress .progress-linear {
-  border-radius: 10px;
-  background-image: -o-linear-gradient(
-    330deg,
-    var(--v-secondary-base),
-    var(--v-primary-base)
-  );
-  background-image: linear-gradient(
-    120deg,
-    var(--v-secondary-base),
-    var(--v-primary-base)
-  );
-}
+
 .title-main {
   display: block;
   position: relative;
