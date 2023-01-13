@@ -8,6 +8,12 @@ const Portfolio = () => {
       <h2 id='portfolio' className='sr-only'>
         {t('portfolio.title')}
       </h2>
+      <div className='title-main'>
+        <h4>
+          {t('portfolio.subtitle1')}
+          <strong>{t('portfolio.subtitle2')}</strong>
+        </h4>
+      </div>
     </section>
   )
 }

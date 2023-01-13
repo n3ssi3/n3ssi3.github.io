@@ -42,13 +42,13 @@ const Work = () => {
               <ul>
                 <li>
                   <div
-                    className='wow slideInLeft'
+                    className='wow fadeInLeftShort'
                     data-wow-offset='100'
                     data-wow-duration='0.5s'
                     style={{
                       visibility: 'visible',
                       animationDuration: '0.5s',
-                      animationName: 'slideInLeft'
+                      animationName: 'fadeInLeftShort'
                     }}>
                     <div>
                       <h3 className='font-semibold text-lg'>{t('work.datatrans.title')}</h3>
@@ -59,13 +59,13 @@ const Work = () => {
                 </li>
                 <li>
                   <div
-                    className='wow slideInLeft'
+                    className='wow fadeInLeftShort'
                     data-wow-offset='100'
                     data-wow-duration='0.5s'
                     style={{
                       visibility: 'visible',
                       animationDuration: '0.5s',
-                      animationName: 'slideInLeft'
+                      animationName: 'fadeInLeftShort'
                     }}>
                     <div>
                       <h3 className='font-semibold text-lg'>{t('work.balihai.title')}</h3>
@@ -76,13 +76,13 @@ const Work = () => {
                 </li>
                 <li>
                   <div
-                    className='wow slideInLeft'
+                    className='wow fadeInLeftShort'
                     data-wow-offset='100'
                     data-wow-duration='0.5s'
                     style={{
                       visibility: 'visible',
                       animationDuration: '0.5s',
-                      animationName: 'slideInLeft'
+                      animationName: 'fadeInLeftShort'
                     }}>
                     <div>
                       <h3 className='font-semibold text-lg'>{t('work.blackriver.title')}</h3>
@@ -93,13 +93,13 @@ const Work = () => {
                 </li>
                 <li>
                   <div
-                    className='wow slideInLeft'
+                    className='wow fadeInLeftShort'
                     data-wow-offset='100'
                     data-wow-duration='0.5s'
                     style={{
                       visibility: 'visible',
                       animationDuration: '0.5s',
-                      animationName: 'slideInLeft'
+                      animationName: 'fadeInLeftShort'
                     }}>
                     <div>
                       <h3 className='font-semibold text-lg'>{t('work.ttt.title')}</h3>
@@ -161,13 +161,13 @@ const Work = () => {
                 </li>
                 <li>
                   <div
-                    className='wow slideInLeft'
+                    className='wow fadeInLeftShort'
                     data-wow-offset='100'
                     data-wow-duration='0.5s'
                     style={{
                       visibility: 'visible',
                       animationDuration: '0.5s',
-                      animationName: 'slideInLeft'
+                      animationName: 'fadeInLeftShort'
                     }}>
                     <div>
                       <h3 className='font-semibold text-lg'>{t('work.ksh.title')}</h3>

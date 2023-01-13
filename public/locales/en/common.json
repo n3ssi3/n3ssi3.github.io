@@ -95,9 +95,17 @@
     "photoshop": "Photoshop / Figma"
   },
   "counter": {
-    "title": "Counter"
+    "title": "Counter",
+    "project": "Completed projects",
+    "hour": "Working hours",
+    "clients": "Happy clients",
+    "project_number": "123",
+    "hour_number": "456",
+    "clients_number": "98"
   },
   "portfolio": {
-    "title": "Portfolio"
+    "title": "Portfolio",
+    "subtitle1": "My",
+    "subtitle2": "Work"
   }
 }

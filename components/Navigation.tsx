@@ -8,20 +8,30 @@ import { StaticI18nLink } from './StaticI18nLink'
 const Navigation = () => {
   const { t } = useTranslation()
   return (
-    <ul className='dark:text-white'>
-      <li className='p-2'>
-        <StaticI18nLink href='/'>{t('nav.home')}</StaticI18nLink>
-      </li>
-      <li className='p-2'>
-        <StaticI18nLink href='/#about'>{t('nav.about')}</StaticI18nLink>
-      </li>
-      <li className='p-2'>
-        <StaticI18nLink href='/#work'>{t('nav.work')}</StaticI18nLink>
-      </li>
-      <li className='p-2'>
-        <StaticI18nLink href='/#portfolio'>{t('nav.portfolio')}</StaticI18nLink>
-      </li>
-    </ul>
+    <div id='side_nav'>
+      <ul className='menu dark:text-white'>
+        <li className='p-2 link relative'>
+          <StaticI18nLink className='text waves-effect' href='/'>
+            {t('nav.home')}
+          </StaticI18nLink>
+        </li>
+        <li className='p-2 link relative'>
+          <StaticI18nLink className='text waves-effect' href='/#about'>
+            {t('nav.about')}
+          </StaticI18nLink>
+        </li>
+        <li className='p-2 link relative'>
+          <StaticI18nLink className='text waves-effect' href='/#work'>
+            {t('nav.work')}
+          </StaticI18nLink>
+        </li>
+        <li className='p-2 link relative'>
+          <StaticI18nLink className='text waves-effect' href='/#portfolio'>
+            {t('nav.portfolio')}
+          </StaticI18nLink>
+        </li>
+      </ul>
+    </div>
   )
 }
 

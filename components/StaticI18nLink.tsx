@@ -7,6 +7,7 @@ type Props = {
   locale?: string
   href?: string
   asPath?: string
+  className?: string
   children: ReactElement
 }
 
