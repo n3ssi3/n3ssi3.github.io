@@ -2,6 +2,7 @@ import clsx from 'clsx'
 import { useTranslation } from 'next-i18next'
 import Link from 'next/link'
 import React from 'react'
+
 import { StaticI18nLink } from './StaticI18nLink'
 
 const Navigation = () => {
@@ -12,19 +13,13 @@ const Navigation = () => {
         <StaticI18nLink href='/'>{t('nav.home')}</StaticI18nLink>
       </li>
       <li className='p-2'>
-        <StaticI18nLink href='/#about'>
-          {t('nav.about')}
-        </StaticI18nLink>
+        <StaticI18nLink href='/#about'>{t('nav.about')}</StaticI18nLink>
       </li>
       <li className='p-2'>
-        <StaticI18nLink href='/#work'>
-          {t('nav.work')}
-        </StaticI18nLink>
+        <StaticI18nLink href='/#work'>{t('nav.work')}</StaticI18nLink>
       </li>
       <li className='p-2'>
-        <StaticI18nLink href='/#portfolio'>
-          {t('nav.portfolio')}
-        </StaticI18nLink>
+        <StaticI18nLink href='/#portfolio'>{t('nav.portfolio')}</StaticI18nLink>
       </li>
     </ul>
   )
