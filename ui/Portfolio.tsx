@@ -8,7 +8,7 @@ import { type Portfolio as PortfolioType, fetchPortfolio } from '@/lib/portfolio
 const Portfolio = () => {
   const { t } = useTranslation()
 
-  const [portfolio, setPortfolio] = useState([])
+  const [portfolio, setPortfolio] = useState<PortfolioType[]>()
   fetchPortfolio().then((p: PortfolioType[]) => setPortfolio(p))
 
   return (
@@ -31,7 +31,7 @@ const Portfolio = () => {
             Category 1
           </button>
         </div> */}
-        {!portfolio.length && (
+        {!portfolio?.length && (
           <p className='overline text-center hide' id='no_data'>
             {t('No data to display yet')}
           </p>
@@ -39,7 +39,7 @@ const Portfolio = () => {
 
         <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
           <Masonry gutter='1rem'>
-            {portfolio.map((item: PortfolioType, i) => (
+            {portfolio?.map((item: PortfolioType, i) => (
               <div
                 key={i}
                 className='item loaded'

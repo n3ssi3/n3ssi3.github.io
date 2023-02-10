@@ -15,6 +15,7 @@ export const StaticI18nLink = (props: Props) => {
   const { i18n } = useTranslation()
   const router = useRouter()
 
+  // @ts-ignore
   const locale = props.locale || i18n.language || ''
 
   if (!locale) {

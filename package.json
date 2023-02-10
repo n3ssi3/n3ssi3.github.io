@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build && next export -o cv",
     "start": "next start",
     "fmt": "prettier --write \"**/*.{js,ts,tsx,md}\" --config ./.prettierrc.js --ignore-path ./.lintignore",
     "lint": "next lint --ignore-path ./.lintignore"

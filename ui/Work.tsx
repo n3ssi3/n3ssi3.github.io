@@ -8,7 +8,9 @@ const Work = () => {
   const { t } = useTranslation()
 
   useEffect(() => {
+    // @ts-ignore
     if (window && window.WOW) {
+      // @ts-ignore
       var wow = new window.WOW({
         boxClass: 'wow', // animated element css class (default is wow)
         animateClass: 'animated', // animation css class (default is animated)
