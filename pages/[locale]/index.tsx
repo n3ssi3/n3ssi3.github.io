@@ -1,14 +1,15 @@
 import { GetStaticPaths } from 'next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
+import About from '@/ui/About'
+import Counter from '@/ui/Counter'
+import Footer from '@/ui/Footer'
+import Hero from '@/ui/Hero'
+import Layout from '@/ui/Layout'
+import Portfolio from '@/ui/Portfolio'
+import Work from '@/ui/Work'
 import { Inter } from '@next/font/google'
 
-import About from '../../components/About'
-import Counter from '../../components/Counter'
-import Hero from '../../components/Hero'
-import Layout from '../../components/Layout'
-import Portfolio from '../../components/Portfolio'
-import Work from '../../components/Work'
 import { getI18nPaths, i18nConfig } from '../../getI18nPaths'
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
       <Work />
       <Counter />
       <Portfolio />
+      <Footer />
     </Layout>
   )
 }

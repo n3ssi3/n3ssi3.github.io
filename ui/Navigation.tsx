@@ -40,6 +40,7 @@ type Props = {
   isNavOpen: boolean
   setIsNavOpen: (isNavOpen: boolean) => void
 }
+
 const MobileNavigation = ({ isNavOpen, setIsNavOpen, setSettings }: Props) => {
   const { t } = useTranslation()
   return (

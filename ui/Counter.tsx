@@ -8,12 +8,12 @@ const Counter = () => {
   const { t } = useTranslation()
   return (
     <div className='bg-gradient'>
-      <section className='md:container md:mx-auto'>
+      <section className='py-20 md:container md:mx-auto'>
         <h2 id='counter' className='sr-only'>
           {t('counter.title')}
         </h2>
 
-        <div className='h-96 grid grid-cols-3 justify-center items-center text-center'>
+        <div className='grid grid-cols-3 justify-center items-center text-center text-white'>
           <div className='col px-6'>
             <h4 className='whitespace-nowrap text-6xl font-semibold'>
               <FontAwesomeIcon icon={faFolder} />

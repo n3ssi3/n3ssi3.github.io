@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @font-face {
   font-family: 'Hind Siliguri Light';
   src: url('../public/fonts/Hind Siliguri Light.ttf');

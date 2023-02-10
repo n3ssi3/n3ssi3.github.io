@@ -371,3 +371,20 @@
 .dark .title-main {
   background-image: url('../public/profile/titleDecoDark.png');
 }
+
+.card.img-thumb {
+  margin:0;
+}
+.card.img-thumb:before {
+  content: "";
+  bottom: -13px;
+  left: -13px;
+  width: 30%;
+  height: 100%;
+  border: 4px solid;
+  border-image-source: linear-gradient(120deg, theme('colors.pink'), theme('colors.violet'));
+  border-image-slice: 1;
+  border-right: 0;
+  border-top: 0;
+  position: absolute;
+}

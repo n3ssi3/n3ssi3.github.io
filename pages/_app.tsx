@@ -1,11 +1,13 @@
 import { appWithTranslation } from 'next-i18next'
 import type { AppProps } from 'next/app'
 
-import { ThemeProvider } from '../context/ThemeContext'
+import { ThemeProvider } from '@/context/ThemeContext'
 // Import the CSS
-import '../styles/globals.css'
-import '../styles/animations.css'
-import '../styles/profile.css'
+import '@/styles/animations.css'
+//TODO: remove
+import '@/styles/dump.css'
+import '@/styles/globals.css'
+import '@/styles/profile.css'
 
 const App = ({ Component, pageProps }: AppProps) => (
   <ThemeProvider>
