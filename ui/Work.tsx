@@ -2,8 +2,6 @@ import { useTranslation } from 'next-i18next'
 import Script from 'next/script'
 import React, { useEffect } from 'react'
 
-// import 'wow.js'
-
 const Work = () => {
   const { t } = useTranslation()
 

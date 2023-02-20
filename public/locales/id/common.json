@@ -24,5 +24,11 @@
     "iam": "Saya Vanessa,",
     "profession": "Pengembang Web",
     "lead": "Saya membuat aplikasi web yang efisien menggunakan tumpukan teknologi yang luas, lebih disukai ReactJs / NextJs dan TailwindCss."
+  },
+  "footer":{
+    "contact": "Kontak pribadi",
+    "phone": "+41 78 872 68 43",
+    "hello": "Mari berbincang",
+    "mail": "vanessa.haenni@gmail.com"
   }
 }

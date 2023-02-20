@@ -143,28 +143,6 @@
 .dark .grey-bg {
   background-color: #303030;
 }
-.space-bottom {
-  margin-bottom: 120px;
-}
-@media (max-width: 959px) {
-  .space-bottom {
-    margin-bottom: 80px;
-  }
-}
-.space-bottom-short {
-  margin-bottom: 80px;
-}
-.space-top {
-  margin-top: 120px;
-}
-@media (max-width: 959px) {
-  .space-top {
-    margin-top: 60px;
-  }
-}
-.space-top-short {
-  margin-top: 80px;
-}
 .container-wrap > section {
   position: relative;
 }
