@@ -38,7 +38,7 @@ const Work = () => {
           </h3>
         </div>
         <div className='col-span-3 dark:text-white'>
-          <div className='grid gap-4 grid-cols-2'>
+          <div className='grid gap-4 md:grid-cols-2 p-3 md:p-0'>
             <div className='history'>
               <h5 className='text-2xl text-violet font-semibold'>{t('work.title')}</h5>
               <ul>

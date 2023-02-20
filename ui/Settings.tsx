@@ -45,7 +45,7 @@ const Settings = ({ settings, setSettings, setIsNavOpen }: Props) => {
           }
         )}>
         <ul className='divide-y divide-gold'>
-          <li className='pb-4 flex justify-between'>
+          <li className='pb-4 flex justify-between gap-4'>
             <span className='font-semibold capitalize'>{t('mode.title')}</span>
             <button
               className='rounded-lg whitespace-nowrap ml-2 px-3 py-1 text-sm font-medium bg-zinc-700 text-zinc-100 hover:bg-zinc-500 hover:text-white'
@@ -56,7 +56,7 @@ const Settings = ({ settings, setSettings, setIsNavOpen }: Props) => {
               </span>
             </button>
           </li>
-          <li className='pt-4 flex justify-between'>
+          <li className='pt-4 flex justify-between gap-4'>
             <span className='font-semibold capitalize'>{t('language.title')}</span>
             <ul>
               <li>

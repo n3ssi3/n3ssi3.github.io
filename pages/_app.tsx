@@ -5,7 +5,7 @@ import { ThemeProvider } from '@/context/ThemeContext'
 // Import the CSS
 import '@/styles/animations.css'
 //TODO: remove
-import '@/styles/dump.css'
+// import '@/styles/dump.css'
 import '@/styles/globals.css'
 import '@/styles/profile.css'
 

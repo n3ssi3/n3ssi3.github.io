@@ -13,7 +13,7 @@ const Counter = () => {
           {t('counter.title')}
         </h2>
 
-        <div className='grid grid-cols-3 justify-center items-center text-center text-white'>
+        {/* <div className='grid grid-cols-3 justify-center items-center text-center text-white'>
           <div className='col px-6'>
             <h4 className='whitespace-nowrap text-6xl font-semibold'>
               <FontAwesomeIcon icon={faFolder} />
@@ -59,7 +59,7 @@ const Counter = () => {
             </h4>
             <h6 className='text-2xl'>{t('counter.clients')}</h6>
           </div>
-        </div>
+        </div> */}
       </section>
     </div>
   )

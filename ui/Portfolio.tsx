@@ -1,7 +1,6 @@
 import clsx from 'clsx'
 import { useTranslation } from 'next-i18next'
 import React, { useState } from 'react'
-import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry'
 
 import { type Portfolio as PortfolioType, fetchPortfolio } from '@/lib/portfolio'
 
@@ -37,32 +36,30 @@ const Portfolio = () => {
           </p>
         )}
 
-        <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
-          <Masonry gutter='1rem'>
-            {portfolio?.map((item: PortfolioType, i) => (
-              <div
-                key={i}
-                className='item loaded'
-                data-category={item.categroy}
-                style={{ transitionDuration: `${i * 0.125}s` }}>
+        {portfolio && (<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
+              {portfolio.map((item: PortfolioType, i) => (
                 <div
-                  className={clsx('card img-thumb', item.clsx, {
-                    short: !item.clsx
-                  })}>
-                  <div className='figure'>
-                    <div className='img' style={{ backgroundImage: `url(${item.image})` }} />
-                  </div>
-                  <div className='detail'>
-                    <h6 className='use-text-subtitle'>{item.title}</h6>
-                    <a href={item.url} target='_blank' rel='noreferrer'>
-                      {item.url}
-                    </a>
+                  key={i}
+                  className={clsx('relative min-h-[240px]', item.clsx, {
+                    'lg:row-span-2': item?.clsx === 'long',
+                    'lg:col-span-2': item?.clsx === 'wide'
+                  })}
+                  data-category={item.categroy}
+                  style={{ transitionDuration: `${i * 0.125}s` }}>
+                  <div
+                    className='flex img-thumb m-0 h-full w-full'>
+                    <div className='inline-block h-full w-full' style={{ backgroundRepeat: 'no-repeat', backgroundSize:'cover', backgroundImage: `url(${item.image})` }} />
+                    <div className='absolute detail transition duration-150 ease-out hover:ease-in h-full w-full bottom-0 opacity-0 flex flex-col justify-center p-4'>
+                      <h3 className='text-white relative text-xl mb-4'>{item.title}</h3>
+                      <a href={item.url} target='_blank' rel='noreferrer' className='text-white relative text-lg'>
+                        {item.url}
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
-          </Masonry>
-        </ResponsiveMasonry>
+              ))}
+            </div>
+        )}
       </div>
     </section>
   )

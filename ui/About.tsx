@@ -15,7 +15,7 @@ const About = () => {
         <div className='md:col-start-2 md:col-span-3'>
           <div className='grid grid-cols-3 md:grid-cols-4 pt-10 lg:justify-around'>
             <div className='text-center mb-4'>
-              <figure className='h-[70px] mb-4'>
+              <figure className='h-[70px] p-2 md:mb-4'>
                 <img
                   src='https://luxione.vercel.app/profile/assets/images/profile/reward1.svg'
                   alt='badge'
@@ -28,7 +28,7 @@ const About = () => {
               </h5>
             </div>
             <div className='text-center mb-4'>
-              <figure className='h-[70px] mb-4'>
+              <figure className='h-[70px] p-2 md:mb-4'>
                 <img
                   src='https://luxione.vercel.app/profile/assets/images/profile/reward2.svg'
                   alt='badge'
@@ -41,7 +41,7 @@ const About = () => {
               </h5>
             </div>
             <div className='text-center mb-4'>
-              <figure className='h-[70px] mb-4'>
+              <figure className='h-[70px] p-2 md:mb-4'>
                 <img
                   src='https://luxione.vercel.app/profile/assets/images/profile/reward3.svg'
                   alt='badge'
@@ -68,7 +68,7 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className='line hidden lg:block'></div>
+          <div className='line hidden lg:block lg:mt-[2px] xl:mt-0'></div>
         </div>
       </div>
     </section>

@@ -20,7 +20,7 @@ export const getPortfolio = (): Portfolio[] => [
   },
   {
     image: 'https://res.cloudinary.com/imajin/image/upload/v1583588473/profile/port1_fxr9tj.jpg',
-    title: 'IFF - Branding &amp; Website',
+    title: 'IFF - Branding & Website',
     url: 'linkofthisitem.com',
     categroy: 'cat1',
     clsx: 'long'
@@ -45,7 +45,7 @@ export const getPortfolio = (): Portfolio[] => [
   },
   {
     image: 'https://res.cloudinary.com/imajin/image/upload/v1583588473/profile/port5_sqeczs.jpg',
-    title: 'U. Furstenberg - Identity &amp; stationery',
+    title: 'U. Furstenberg - Identity & stationery',
     url: 'linkofthisitem.com',
     categroy: 'cat1',
     clsx: 'long'
@@ -54,7 +54,8 @@ export const getPortfolio = (): Portfolio[] => [
     image: 'https://res.cloudinary.com/imajin/image/upload/v1583588473/profile/port1_fxr9tj.jpg',
     title: 'NUEN - Brand Identity',
     url: 'linkofthisitem.com',
-    categroy: 'cat1'
+    categroy: 'cat1',
+    clsx: 'wide'
   },
   {
     image: 'https://res.cloudinary.com/imajin/image/upload/v1583588473/profile/port3_xavvlu.jpg',
