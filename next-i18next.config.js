@@ -7,5 +7,5 @@ module.exports = {
     locales: ['en', 'de', 'id', 'fr'],
     saveMissing: true
   },
-  returnNull: false,
+  returnNull: false
 }
