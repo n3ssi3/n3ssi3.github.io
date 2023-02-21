@@ -1,15 +1,18 @@
+import clsx from 'clsx'
 import { useTranslation } from 'next-i18next'
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 
 import logo from '@/public/images/logo-no-background.svg'
 import { faFacebook, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faEye } from '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Footer = () => {
   const { t } = useTranslation()
 
-  console.log(logo)
+  const [revealed, setRevealed] = useState<Boolean>(false)
+
   return (
     <>
       <section className='bg-gradient text-white' id='footer'>
@@ -32,11 +35,27 @@ const Footer = () => {
             <div className='divide-y'>
               <div className='p-4'>
                 <h5 className='text-xl text-gold'>{t('footer.contact')}</h5>
-                <p>{t('footer.phone')}</p>
+                <div className='flex justify-between'>
+                  <p
+                    className={clsx({
+                      'blur-sm': !revealed
+                    })}>
+                    {revealed ? t('footer.phone'): t('footer.no_spoon')}
+                  </p>
+                  {!revealed && <FontAwesomeIcon icon={faEye} onClick={(): void => setRevealed(true)} />}
+                </div>
               </div>
               <div className='p-4 pb-0'>
                 <h5 className='text-xl text-gold'>{t('footer.hello')}</h5>
-                <p>{t('footer.mail')}</p>
+                <div className='flex justify-between'>
+                  <p
+                    className={clsx({
+                      'blur-sm': !revealed
+                    })}>
+                    {revealed ? t('footer.mail'): t('footer.no_spoon')}
+                  </p>
+                  {!revealed && <FontAwesomeIcon icon={faEye} onClick={(): void => setRevealed(true)} />}
+                </div>
               </div>
             </div>
             <div className='socmed'>

@@ -69,7 +69,7 @@
     "divio": {
       "title": "Senior Frontend Developer",
       "company": "Divio Ag",
-      "time": "Oct 2016 - Jan 2015"
+      "time": "Oct 2013 - Jan 2015"
     },
     "liip": {
       "title": "Intern - Frontend Developer",
@@ -107,12 +107,29 @@
   "portfolio": {
     "title": "Portfolio",
     "subtitle1": "My",
-    "subtitle2": "Work"
+    "subtitle2": "Work",
+    "tech": {
+      "php": "PHP",
+      "js": "JavaScript",
+      "node": "Node.Js",
+      "ember": "Ember.js",
+      "mysql": "MySQL",
+      "rrd": "Round-robin database",
+      "magento": "Magento",
+      "symfony": "Symfony",
+      "yui": "YUI Library",
+      "python": "Python",
+      "wordpress": "Wordpress",
+      "react": "React",
+      "css": "CSS3",
+      "html": "HTML5"
+    }
   },
   "footer":{
     "contact": "My personal contact",
     "phone": "+41 78 872 68 43",
     "hello": "Say Hallo",
-    "mail": "vanessa.haenni@gmail.com"
+    "mail": "vanessa.haenni@gmail.com",
+    "no_spoon": "There is no spoon"
   }
 }

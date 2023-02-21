@@ -30,6 +30,100 @@
     "contact": "Mon contact personnel",
     "phone": "+41 78 872 68 43",
     "hello": "Contactez moi",
-    "mail": "vanessa.haenni@gmail.com"
+    "mail": "vanessa.haenni@gmail.com",
+    "no_spoon": "Rien à trouver"
+  },
+  "about": {
+    "title": "À propos de moi",
+    "reward1": {
+      "p": "Special Mention",
+      "h5": "Awards"
+    },
+    "reward2": {
+      "p": "about.reward2.p",
+      "h5": "about.reward2.h5"
+    },
+    "reward3": {
+      "p": "about.reward3.p",
+      "h5": "about.reward3.h5"
+    }
+  },
+  "work": {
+    "title": "Expérience professionnelle",
+    "datatrans": {
+      "title": "Senior Software Engineer",
+      "company": "Datatrans / Planet",
+      "time": "Avril 2019 - présent"
+    },
+    "balihai": {
+      "title": "Digital Marketing / Online Manager",
+      "company": "Bali Hai",
+      "time": "Déc. 2016 - Nov. 2018"
+    },
+    "blackriver": {
+      "title": "Lead Frondend Developer",
+      "company": "Blackriverdata",
+      "time": "Déc. 2015 - Janvier 2017"
+    },
+    "ttt": {
+      "title": "Stagiaire - Instructeur de plongée SSI",
+      "company": "Tauch Terminal Tulamben",
+      "time": "Février 2015 - Novembre 2015"
+    },
+    "divio": {
+      "title": "Senior Frontend Developer",
+      "company": "Divio Ag",
+      "time": "Octobre 2013 - Janvier 2015"
+    },
+    "liip": {
+      "title": "Stagiaire - Frontend Developer",
+      "company": "Liip AG",
+      "time": "Août 2009 - Juin 2013"
+    },
+    "zattoo": {
+      "title": "Stagiaire",
+      "company": "Zattoo Inc.",
+      "time": "Août 2008 - Mai 2009"
+    },
+    "ksh": {
+      "title": "Étudiant",
+      "company": "École d'informatique de Hottingen",
+      "time": "Août 2004 - Juillet 2008"
+    }
+  },
+  "me": {
+    "name": "Vanessa Aryanata"
+  },
+  "skills": {
+    "title": "Compétences et expertise",
+    "html": "HTML / CSS / SASS",
+    "javascript": "Javascript (ES6) / ReactJs / ExpressJs",
+    "marketing": "Marketing / Social Media",
+    "agile": "Agile Managment",
+    "photoshop": "Photoshop / Figma"
+  },
+  "counter": {
+    "title": "Counter"
+  },
+  "portfolio": {
+    "title": "Portefeuille",
+    "subtitle1": "Mon",
+    "subtitle2": "Travail",
+    "tech": {
+      "php": "PHP",
+      "js": "JavaScript",
+      "node": "Node.Js",
+      "ember": "Ember.js",
+      "mysql": "MySQL",
+      "rrd": "Round-robin database",
+      "magento": "Magento",
+      "symfony": "Symfony",
+      "yui": "YUI Library",
+      "python": "Python",
+      "wordpress": "Wordpress",
+      "react": "React",
+      "css": "CSS3",
+      "html": "HTML5"
+    }
   }
 }

@@ -8,7 +8,6 @@ import Hero from '@/ui/Hero'
 import Layout from '@/ui/Layout'
 import Portfolio from '@/ui/Portfolio'
 import Work from '@/ui/Work'
-import { Inter } from '@next/font/google'
 
 import { getI18nPaths, i18nConfig } from '../../getI18nPaths'
 

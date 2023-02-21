@@ -6,76 +6,71 @@ export type Portfolio = {
   title: string
   image: string
   url: string
-  categroy: string
+  tech?: Array<string>
   clsx?: string
 }
 
 export const getPortfolio = (): Portfolio[] => [
   {
-    title: 'Illustration Collection 2021',
-    image: 'https://res.cloudinary.com/imajin/image/upload/v1583588473/profile/port2_kxnhhq.jpg',
-    url: 'linkofthisitem.com',
-    categroy: 'cat1',
-    clsx: 'short'
+    title: 'Zattoo 2008',
+    image: 'zattoo.png',
+    url: 'zattoo.ch',
+    tech: ['php', 'js', 'rrd']
   },
   {
-    image: 'https://res.cloudinary.com/imajin/image/upload/v1583588473/profile/port1_fxr9tj.jpg',
-    title: 'IFF - Branding & Website',
-    url: 'linkofthisitem.com',
-    categroy: 'cat1',
-    clsx: 'long'
+    image: 'jungfrau.png',
+    title: 'Jungfraubahnen Online-Shop',
+    url: 'shop.jungfrau.ch',
+    tech: ['magento', 'php', 'js', 'mysql']
   },
   {
-    image: 'https://res.cloudinary.com/imajin/image/upload/v1583588473/profile/port3_xavvlu.jpg',
-    title: 'Personal Works',
-    url: 'linkofthisitem.com',
-    categroy: 'cat1'
+    image: 'raiffeisen.png',
+    title: 'Raiffeisen MemberPlus',
+    url: 'memberplus.raiffeisen.ch',
+    tech: ['magento', 'php', 'js', 'mysql']
   },
   {
-    image: 'https://res.cloudinary.com/imajin/image/upload/v1583930319/profile/port4_prba13.jpg',
-    title: 'Lay-Out / Art book',
-    url: 'linkofthisitem.com',
-    categroy: 'cat1'
+    image: 'nzz.png',
+    title: 'NZZ',
+    url: 'webpaper.nzz.ch',
+    tech: ['yui']
   },
   {
-    image: 'https://res.cloudinary.com/imajin/image/upload/v1583588474/profile/port6_rzzgf0.jpg',
-    title: 'France Universités - Brand design',
-    url: 'linkofthisitem.com',
-    categroy: 'cat1'
+    image: 'schild.png',
+    title: 'SCHILD',
+    url: 'schild.ch',
+    tech: ['magento', 'php', 'js', 'mysql']
   },
   {
-    image: 'https://res.cloudinary.com/imajin/image/upload/v1583588473/profile/port5_sqeczs.jpg',
-    title: 'U. Furstenberg - Identity & stationery',
-    url: 'linkofthisitem.com',
-    categroy: 'cat1',
-    clsx: 'long'
+    image: 'zkb.png',
+    title: 'Zürcher Kantonalbank',
+    url: 'zkb.ch',
+    tech: ['css', 'html']
   },
   {
-    image: 'https://res.cloudinary.com/imajin/image/upload/v1583588473/profile/port1_fxr9tj.jpg',
-    title: 'NUEN - Brand Identity',
-    url: 'linkofthisitem.com',
-    categroy: 'cat1',
-    clsx: 'wide'
+    image: 'fanpictor.webp',
+    title: 'Fanpictor',
+    url: 'fanpictor.com',
+    clsx: 'wide',
+    tech: ['ember']
   },
   {
-    image: 'https://res.cloudinary.com/imajin/image/upload/v1583588473/profile/port3_xavvlu.jpg',
-    title: 'Coffee Fields Forever',
-    url: 'linkofthisitem.com',
-    categroy: 'cat1'
+    image: 'salt.png',
+    title: 'Orange - SALT',
+    url: 'salt.ch',
+    clsx: 'long',
+    tech: ['python', 'css', 'html', 'js']
   },
   {
-    image: 'https://res.cloudinary.com/imajin/image/upload/v1583588473/profile/port2_kxnhhq.jpg',
-    title: 'ANTA2022',
-    url: 'linkofthisitem.com',
-    categroy: 'cat1'
+    image: 'balihai.png',
+    title: 'BALI HAI Group',
+    url: 'balihaicruises.com',
+    tech: ['wordpress', 'css', 'html', 'js']
+  },
+  {
+    image: 'pciproxy.jpg',
+    title: 'PCI Proxy',
+    url: 'pci-proxy.com',
+    tech: ['node', 'react']
   }
 ]
-
-export async function fetchPortfoliobyCategory(cat: string | undefined) {
-  // Assuming it always return expected categories
-  return getPortfolio().find(portfolio => portfolio.categroy === cat)
-}
-
-export async function fetchPortfolio(): Promise<Portfolio[]> {
-  return getPortfolio()
-}

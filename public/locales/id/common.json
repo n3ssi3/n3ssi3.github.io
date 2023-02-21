@@ -30,6 +30,100 @@
     "contact": "Kontak pribadi",
     "phone": "+41 78 872 68 43",
     "hello": "Mari berbincang",
-    "mail": "vanessa.haenni@gmail.com"
+    "mail": "vanessa.haenni@gmail.com",
+    "no_spoon": "Tidak ada yang bisa dilihat di sini"
+  },
+  "about": {
+    "title": "Tentang Saya",
+    "reward1": {
+      "p": "Disebutkan Khusus",
+      "h5": "Penghargaan"
+    },
+    "reward2": {
+      "p": "about.reward2.p",
+      "h5": "about.reward2.h5"
+    },
+    "reward3": {
+      "p": "about.reward3.p",
+      "h5": "about.reward3.h5"
+    }
+  },
+  "work": {
+    "title": "Pengalaman kerja",
+    "datatrans": {
+      "title": "Senior Software Engineer",
+      "company": "Datatrans / Planet",
+      "time": "April 2019 - present"
+    },
+    "balihai": {
+      "title": "Digital Marketing / Online Manager",
+      "company": "Bali Hai",
+      "time": "Des 2016 - Nov 2018"
+    },
+    "blackriver": {
+      "title": "Pemimpin Pengembang Frontend",
+      "company": "Blackriverdata",
+      "time": "Des 2015 - Jan 2017"
+    },
+    "ttt": {
+      "title": "Magang - Instruktor Menyelam SSI",
+      "company": "Tauch Terminal Tulamben",
+      "time": "Feb 2015 - Nov 2015"
+    },
+    "divio": {
+      "title": "Pengembang Frontend Senior",
+      "company": "Divio Ag",
+      "time": "Okt 2013 - Jan 2015"
+    },
+    "liip": {
+      "title": "Magang - Pengembang Frontend",
+      "company": "Liip AG",
+      "time": "Agu 2009 - Jun 2013"
+    },
+    "zattoo": {
+      "title": "Magang",
+      "company": "Zattoo Inc.",
+      "time": "Agu 2008 - Mei 2009"
+    },
+    "ksh": {
+      "title": "Mahasiswa",
+      "company": "Sekolah Ilmu Komputer Hottingen",
+      "time": "Agu 2004 - Jul 2008"
+    }
+  },
+  "me": {
+    "name": "Vanessa Aryanata"
+  },
+  "skills": {
+    "title": "Keterampilan dan Keahlian",
+    "html": "HTML / CSS / SASS",
+    "javascript": "Javascript (ES6) / ReactJs / ExpressJs",
+    "marketing": "Marketing / Social Media",
+    "agile": "Agile Managment",
+    "photoshop": "Photoshop / Figma"
+  },
+  "counter": {
+    "title": "Counter"
+  },
+  "portfolio": {
+    "title": "Portofolio",
+    "subtitle1": "Kerja",
+    "subtitle2": "saya",
+    "tech": {
+      "php": "PHP",
+      "js": "JavaScript",
+      "node": "Node.Js",
+      "ember": "Ember.js",
+      "mysql": "MySQL",
+      "rrd": "Round-robin database",
+      "magento": "Magento",
+      "symfony": "Symfony",
+      "yui": "YUI Library",
+      "python": "Python",
+      "wordpress": "Wordpress",
+      "react": "React",
+      "css": "CSS3",
+      "html": "HTML5"
+    }
   }
 }
