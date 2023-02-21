@@ -19,11 +19,8 @@ type Props = {
 const Index = ({ locales }: Props) => {
   const router = useRouter()
 
-  // language detection
-  // not recommended for production, use server redirection instead of this
   useEffect(() => {
     for (const locale of locales) {
-      // eslint-disable-next-line no-undef
       for (const lang of navigator.languages) {
         if (lang.startsWith(locale)) {
           router.replace('/' + locale)
@@ -31,7 +28,7 @@ const Index = ({ locales }: Props) => {
         }
       }
     }
-  }, [])
+  }, [locales, router])
 
   return (
     <div className='flex w-screen h-screen bg-gradient justify-center items-center'>

@@ -30,6 +30,11 @@ const Navigation = () => {
             {t('nav.portfolio')}
           </StaticI18nLink>
         </li>
+        <li className='p-2 link relative'>
+          <StaticI18nLink className='text waves-effect' href='/#footer'>
+            {t('nav.contact')}
+          </StaticI18nLink>
+        </li>
       </ul>
     </div>
   )

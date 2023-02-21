@@ -17,7 +17,8 @@
     "home": "Home",
     "about": "À propos de moi",
     "work": "L'expérience professionnelle",
-    "portfolio": "Portefeuille"
+    "portfolio": "Portefeuille",
+    "contact": "Contact"
   },
   "hero": {
     "hello": "Bonjour à tous,",
