@@ -3,7 +3,20 @@ import { useTranslation } from 'next-i18next'
 import React, { useState } from 'react'
 
 import { type Portfolio as PortfolioType, getPortfolio } from '@/lib/portfolio'
-import { faCss3, faEmber, faHtml5, faJs, faMagento, faNodeJs, faPhp, faPython, faReact, faSymfony, faWordpress, faYahoo } from '@fortawesome/free-brands-svg-icons'
+import {
+  faCss3,
+  faEmber,
+  faHtml5,
+  faJs,
+  faMagento,
+  faNodeJs,
+  faPhp,
+  faPython,
+  faReact,
+  faSymfony,
+  faWordpress,
+  faYahoo
+} from '@fortawesome/free-brands-svg-icons'
 import { IconDefinition } from '@fortawesome/free-regular-svg-icons'
 import { faDatabase } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -42,10 +55,10 @@ const Portfolio = () => {
       <div className='title-main'>
         <h4>
           {t('portfolio.subtitle1')}
-          <strong>{t('portfolio.subtitle2')}</strong>
+          <strong className='ml-2'>{t('portfolio.subtitle2')}</strong>
         </h4>
       </div>
-      <div className='hidden-xs-down'>
+      <div>
         {/* <div className='filter'>
           <button className='btn bg-gradient waves-effect selected' data-filter='all'>
             All

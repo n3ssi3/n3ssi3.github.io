@@ -31,17 +31,18 @@
   },
   "about":{
     "title": "About me",
-    "reward1":{
-      "p": "Special Mention",
-      "h5": "Awards"
+    "reward1": {
+      "p": "'b' + 'a' + +'a' + 'a'",
+      "h5": "baNaNa",
+      "question": "= ?"
     },
-    "reward2":{
-      "p": "100k videos",
-      "h5": "Subscriber"
+    "reward2": {
+      "p": "Read it!",
+      "h5": "&#128512;"
     },
-    "reward3":{
-      "p": "Best Filmography",
-      "h5": "Footage"
+    "reward3": {
+      "p": "grayscale(100%)",
+      "h5": "filter"
     }
   },
   "work": {

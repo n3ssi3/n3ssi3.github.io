@@ -36,16 +36,17 @@
   "about": {
     "title": "Tentang Saya",
     "reward1": {
-      "p": "Disebutkan Khusus",
-      "h5": "Penghargaan"
+      "p": "'b' + 'a' + +'a' + 'a'",
+      "h5": "baNaNa",
+      "question": "= ?"
     },
     "reward2": {
-      "p": "about.reward2.p",
-      "h5": "about.reward2.h5"
+      "p": "Read it!",
+      "h5": "&#128512;"
     },
     "reward3": {
-      "p": "about.reward3.p",
-      "h5": "about.reward3.h5"
+      "p": "grayscale(100%)",
+      "h5": "filter"
     }
   },
   "work": {

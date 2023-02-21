@@ -40,9 +40,11 @@ const Footer = () => {
                     className={clsx({
                       'blur-sm': !revealed
                     })}>
-                    {revealed ? t('footer.phone'): t('footer.no_spoon')}
+                    {revealed ? t('footer.phone') : t('footer.no_spoon')}
                   </p>
-                  {!revealed && <FontAwesomeIcon icon={faEye} onClick={(): void => setRevealed(true)} />}
+                  {!revealed && (
+                    <FontAwesomeIcon icon={faEye} onClick={(): void => setRevealed(true)} />
+                  )}
                 </div>
               </div>
               <div className='p-4 pb-0'>
@@ -52,9 +54,11 @@ const Footer = () => {
                     className={clsx({
                       'blur-sm': !revealed
                     })}>
-                    {revealed ? t('footer.mail'): t('footer.no_spoon')}
+                    {revealed ? t('footer.mail') : t('footer.no_spoon')}
                   </p>
-                  {!revealed && <FontAwesomeIcon icon={faEye} onClick={(): void => setRevealed(true)} />}
+                  {!revealed && (
+                    <FontAwesomeIcon icon={faEye} onClick={(): void => setRevealed(true)} />
+                  )}
                 </div>
               </div>
             </div>
