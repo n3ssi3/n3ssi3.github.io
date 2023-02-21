@@ -19,6 +19,7 @@
       "@/context/*": ["context/*"],
       "@/lib/*": ["lib/*"],
       "@/ui/*": ["ui/*"],
+      "@/public/*": ["public/*"],
       "@/styles/*": ["styles/*"],
     },
     "plugins": [

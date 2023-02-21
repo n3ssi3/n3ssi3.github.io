@@ -2956,14 +2956,12 @@
               if (O.isAPIRoute(e)) return $({ url: i, router: v }), new Promise(() => {})
               let R =
                   E ||
-                  (yield v
-                    .fetchComponent(e)
-                    .then(e => ({
-                      Component: e.page,
-                      styleSheets: e.styleSheets,
-                      __N_SSG: e.mod.__N_SSG,
-                      __N_SSP: e.mod.__N_SSP
-                    }))),
+                  (yield v.fetchComponent(e).then(e => ({
+                    Component: e.page,
+                    styleSheets: e.styleSheets,
+                    __N_SSG: e.mod.__N_SSG,
+                    __N_SSP: e.mod.__N_SSP
+                  }))),
                 M =
                   null == j
                     ? void 0
@@ -3117,25 +3115,23 @@
               return
             let m = s.removeTrailingSlash(i)
             yield Promise.all([
-              o.pageLoader
-                ._isSsg(m)
-                .then(
-                  t =>
-                    !!t &&
-                    X({
-                      dataHref: (null == h ? void 0 : h.json)
-                        ? null == h
-                          ? void 0
-                          : h.dataHref
-                        : o.pageLoader.getDataHref({ href: e, asPath: d, locale: f }),
-                      isServerRender: !1,
-                      parseJSON: !0,
-                      inflightCache: o.sdc,
-                      persistCache: !o.isPreview,
-                      isPrefetch: !0,
-                      unstable_skipClientCache: r.unstable_skipClientCache || (r.priority && !0)
-                    }).then(() => !1)
-                ),
+              o.pageLoader._isSsg(m).then(
+                t =>
+                  !!t &&
+                  X({
+                    dataHref: (null == h ? void 0 : h.json)
+                      ? null == h
+                        ? void 0
+                        : h.dataHref
+                      : o.pageLoader.getDataHref({ href: e, asPath: d, locale: f }),
+                    isServerRender: !1,
+                    parseJSON: !0,
+                    inflightCache: o.sdc,
+                    persistCache: !o.isPreview,
+                    isPrefetch: !0,
+                    unstable_skipClientCache: r.unstable_skipClientCache || (r.priority && !0)
+                  }).then(() => !1)
+              ),
               o.pageLoader[r.priority ? 'loadPage' : 'prefetch'](m)
             ])
           })()

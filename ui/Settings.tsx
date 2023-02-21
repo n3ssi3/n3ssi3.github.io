@@ -1,18 +1,17 @@
 import clsx from 'clsx'
 import { useTranslation } from 'next-i18next'
 import Image from 'next/image'
-import Link from 'next/link'
 import React from 'react'
 
+import Bahasa from '@/public/images/Bahasa.svg'
+import English from '@/public/images/English.svg'
+import French from '@/public/images/French.svg'
+import German from '@/public/images/German.svg'
 import { faMoon, faSun } from '@fortawesome/free-regular-svg-icons'
 import { faGear } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import { useTheme } from '../context/ThemeContext'
-import Bahasa from '../public/Bahasa.svg'
-import English from '../public/English.svg'
-import French from '../public/French.svg'
-import German from '../public/German.svg'
 import { StaticI18nLink } from './StaticI18nLink'
 
 type Props = {

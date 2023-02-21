@@ -4,11 +4,11 @@ import { useTranslation } from 'next-i18next'
 import Image from 'next/image'
 import React, { useEffect, useRef, useState } from 'react'
 
+import banner from '@/public/images/banner.jpg'
+import logo from '@/public/images/logo-no-background.svg'
 import { faFacebook, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import banner from '../public/banner.jpg'
-import logo from '../public/logo-no-background.svg'
 import { MobileNavigation, Navigation } from './Navigation'
 import Settings from './Settings'
 

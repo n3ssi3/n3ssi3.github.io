@@ -2,7 +2,7 @@ import { useTranslation } from 'next-i18next'
 import Image from 'next/image'
 import React from 'react'
 
-import profile from '../public/profile.jpg'
+import profile from '@/public/images/profile.jpg'
 
 const About = () => {
   const { t } = useTranslation()

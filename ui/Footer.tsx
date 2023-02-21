@@ -2,10 +2,9 @@ import { useTranslation } from 'next-i18next'
 import Image from 'next/image'
 import React from 'react'
 
+import logo from '@/public/images/logo-no-background.svg'
 import { faFacebook, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
-import logo from '../public/logo-no-background.svg'
 
 const Footer = () => {
   const { t } = useTranslation()
@@ -17,7 +16,16 @@ const Footer = () => {
         <footer className='py-20 md:container md:mx-auto'>
           <div className='flex justify-between items-end'>
             <div>
-              <div style={{ backgroundColor: 'white', mask: `url(${logo.src}) no-repeat center / contain`, WebkitMask: `url(${logo.src}) no-repeat center / contain`, height: '120px', width: '120px', margin: '0 auto' }} />
+              <div
+                style={{
+                  backgroundColor: 'white',
+                  mask: `url(${logo.src}) no-repeat center / contain`,
+                  WebkitMask: `url(${logo.src}) no-repeat center / contain`,
+                  height: '120px',
+                  width: '120px',
+                  margin: '0 auto'
+                }}
+              />
               <h3 className='text-4xl my-4'>{t('me.name')}</h3>
               <h4 className='text-2xl'>{t('hero.profession')}</h4>
             </div>
