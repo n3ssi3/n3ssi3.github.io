@@ -27,6 +27,15 @@
   opacity: 0.75;
 }
 
+.bg-gradient-inverted {
+  background-image: linear-gradient(
+    120deg,
+    theme('colors.violet'),
+    theme('colors.pink')
+  );
+  opacity: 0.75;
+}
+
 .frame {
   position: absolute;
   top: 16px;

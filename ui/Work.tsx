@@ -53,7 +53,7 @@ const Work = () => {
                     <div>
                       <h3 className='font-semibold text-lg'>{t('work.datatrans.title')}</h3>
                       <p>{t('work.datatrans.company')}</p>
-                      <p className='text-bordeaux'>{t('work.datatrans.time')}</p>
+                      <p className='text-bordeaux dark:text-gold'>{t('work.datatrans.time')}</p>
                     </div>
                   </div>
                 </li>
@@ -70,7 +70,7 @@ const Work = () => {
                     <div>
                       <h3 className='font-semibold text-lg'>{t('work.balihai.title')}</h3>
                       <p>{t('work.balihai.company')}</p>
-                      <p className='text-bordeaux'>{t('work.balihai.time')}</p>
+                      <p className='text-bordeaux dark:text-gold'>{t('work.balihai.time')}</p>
                     </div>
                   </div>
                 </li>
@@ -87,7 +87,7 @@ const Work = () => {
                     <div>
                       <h3 className='font-semibold text-lg'>{t('work.blackriver.title')}</h3>
                       <p>{t('work.blackriver.company')}</p>
-                      <p className='text-bordeaux'>{t('work.blackriver.time')}</p>
+                      <p className='text-bordeaux dark:text-gold'>{t('work.blackriver.time')}</p>
                     </div>
                   </div>
                 </li>
@@ -104,7 +104,7 @@ const Work = () => {
                     <div>
                       <h3 className='font-semibold text-lg'>{t('work.ttt.title')}</h3>
                       <p>{t('work.ttt.company')}</p>
-                      <p className='text-bordeaux'>{t('work.ttt.time')}</p>
+                      <p className='text-bordeaux dark:text-gold'>{t('work.ttt.time')}</p>
                     </div>
                   </div>
                 </li>
@@ -121,7 +121,7 @@ const Work = () => {
                     <div>
                       <h3 className='font-semibold text-lg'>{t('work.divio.title')}</h3>
                       <p>{t('work.divio.company')}</p>
-                      <p className='text-bordeaux'>{t('work.divio.time')}</p>
+                      <p className='text-bordeaux dark:text-gold'>{t('work.divio.time')}</p>
                     </div>
                   </div>
                 </li>
@@ -138,7 +138,7 @@ const Work = () => {
                     <div>
                       <h3 className='font-semibold text-lg'>{t('work.liip.title')}</h3>
                       <p>{t('work.liip.company')}</p>
-                      <p className='text-bordeaux'>{t('work.liip.time')}</p>
+                      <p className='text-bordeaux dark:text-gold'>{t('work.liip.time')}</p>
                     </div>
                   </div>
                 </li>
@@ -155,7 +155,7 @@ const Work = () => {
                     <div>
                       <h3 className='font-semibold text-lg'>{t('work.zattoo.title')}</h3>
                       <p>{t('work.zattoo.company')}</p>
-                      <p className='text-bordeaux'>{t('work.zattoo.time')}</p>
+                      <p className='text-bordeaux dark:text-gold'>{t('work.zattoo.time')}</p>
                     </div>
                   </div>
                 </li>
@@ -172,7 +172,7 @@ const Work = () => {
                     <div>
                       <h3 className='font-semibold text-lg'>{t('work.ksh.title')}</h3>
                       <p>{t('work.ksh.company')}</p>
-                      <p className='text-bordeaux'>{t('work.ksh.time')}</p>
+                      <p className='text-bordeaux dark:text-gold'>{t('work.ksh.time')}</p>
                     </div>
                   </div>
                 </li>

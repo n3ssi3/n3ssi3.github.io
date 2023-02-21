@@ -15,13 +15,13 @@ const Footer = () => {
 
   return (
     <>
-      <section className='bg-gradient text-white' id='footer'>
+      <section className='bg-gradient text-bordeaux' id='footer'>
         <footer className='py-20 md:container md:mx-auto'>
           <div className='flex justify-between items-end'>
             <div>
               <div
                 style={{
-                  backgroundColor: 'white',
+                  backgroundColor: '#086375',
                   mask: `url(${logo.src}) no-repeat center / contain`,
                   WebkitMask: `url(${logo.src}) no-repeat center / contain`,
                   height: '120px',
@@ -34,11 +34,11 @@ const Footer = () => {
             </div>
             <div className='divide-y'>
               <div className='p-4'>
-                <h5 className='text-xl text-gold'>{t('footer.contact')}</h5>
+                <h5 className='text-xl'>{t('footer.contact')}</h5>
                 <div className='flex justify-between'>
                   <p
                     className={clsx({
-                      'blur-sm': !revealed
+                      'blur-sm pr-4': !revealed
                     })}>
                     {revealed ? t('footer.phone') : t('footer.no_spoon')}
                   </p>
@@ -48,11 +48,11 @@ const Footer = () => {
                 </div>
               </div>
               <div className='p-4 pb-0'>
-                <h5 className='text-xl text-gold'>{t('footer.hello')}</h5>
+                <h5 className='text-xl'>{t('footer.hello')}</h5>
                 <div className='flex justify-between'>
                   <p
                     className={clsx({
-                      'blur-sm': !revealed
+                      'blur-sm pr-4': !revealed
                     })}>
                     {revealed ? t('footer.mail') : t('footer.no_spoon')}
                   </p>

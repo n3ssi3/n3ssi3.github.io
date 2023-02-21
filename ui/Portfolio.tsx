@@ -88,9 +88,9 @@ const Portfolio = () => {
                     }}
                   />
                   <div className='absolute detail transition duration-150 ease-out hover:ease-in h-full w-full bottom-0 opacity-0 flex flex-col justify-center p-4'>
-                    <h3 className='text-white relative text-xl mb-4'>{item.title}</h3>
+                    <h3 className='relative text-xl mb-4 text-bordeaux'>{item.title}</h3>
                     {item.tech && (
-                      <div className='text-white relative'>
+                      <div className='text-violet relative'>
                         {item.tech.map((tech: string) => (
                           <div className='group inline-block relative mr-2' key={`${i}-${tech}`}>
                             <FontAwesomeIcon
@@ -112,7 +112,7 @@ const Portfolio = () => {
                       href={item.url}
                       target='_blank'
                       rel='noreferrer'
-                      className='text-white relative text-lg'>
+                      className='text-bordeaux relative text-lg'>
                       {item.url}
                     </a>
                   </div>
