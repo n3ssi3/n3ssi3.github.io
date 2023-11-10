@@ -22,10 +22,10 @@ module.exports = {
     },
     extend: {
       colors: {
-        pink: '#EC407A',
+        pink: '#B2FF9E',
         lightpink: '#F8BBD0',
-        bordeaux: '#880E4F',
-        violet: '#673AB7',
+        bordeaux: '#086375',
+        violet: '#1DD3B0',
         lightviolet: '#D1C4E9',
         blue: '#311B92',
         gold: '#D6BD96'
